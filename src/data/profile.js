@@ -33,7 +33,7 @@ export const profile = {
     },
     {
       label: 'Email',
-      url: 'mailto:tu-correo@ejemplo.com',
+      url: 'mailto:juankniazev1996@gmail.com',
     },
   ],
 }
