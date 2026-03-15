@@ -1,35 +1,35 @@
 export const profile = {
-  name: 'Juan',
+  name: 'Juan Francisco Kniazev',
   role: {
-    es: 'Desarrollador Frontend y creador de experiencias digitales',
-    en: 'Frontend developer building digital experiences',
+    es: 'Desarrollador Full-Stack | Analista de Datos | Gerente de Proyectos',
+    en: 'Full-Stack Developer | Data Analyst | Project Manager',
   },
   bio: {
-    es: 'Construyo interfaces claras, de alto impacto visual y enfocadas en resultados. Me especializo en React y en transformar ideas complejas en productos simples de usar.',
-    en: 'I build clear interfaces with immediate visual impact and business focus. I specialize in React and turning complex ideas into simple products.',
+    es: 'Titulado en Técnico en Informática y Analista de Tecnologías de la Información con background de desarrollo en entorno .NET , análisis de datos y gestión de proyectos de integración. Me especializo en entorno .NET y en la transformación de necesidades de negocio en soluciones tecnológicas efectivas.',
+    en: 'Graduated in Computer Technician and Information Technology Analyst with a background in .NET development, data analysis, and integration project management. I specialize in the .NET environment and in transforming business needs into effective technological solutions.',
   },
   experiences: [
     {
-      es: '5+ anios trabajando en productos web para startups y equipos remotos.',
-      en: '5+ years building web products for startups and remote teams.',
+      es: '2+ años trabajando en entornos .NET llevando a cabo proyectos end-to-end, desde el análisis de requerimientos junto al cliente hasta la implementación y despliegue.',
+      en: '2+ years working in .NET environments carrying out end-to-end projects, from requirements analysis with the client to implementation and deployment.',
     },
     {
-      es: 'Liderazgo de migraciones frontend y mejora de performance en produccion.',
-      en: 'Led frontend migrations and production performance improvements.',
+      es: '2+ años como analista senior en el rol de governanza de datos, trabajando con herramientas como LookerStudio, BigQuery, DevExpress y SQL Server para transformar datos en insights accionables.',
+      en: '2+ years as a senior data governance analyst, working with tools like LookerStudio, BigQuery, DevExpress, and SQL Server to transform data into actionable insights.',
     },
     {
-      es: 'Mentoria tecnica y colaboracion cercana con diseno y negocio.',
-      en: 'Technical mentoring and close collaboration with design and business teams.',
+      es: '+4 años como representante senior de atención al cliente en empresa multinacional líder en su sector, desarrollando habilidades de comunicación efectiva, resolución de problemas y gestión de relaciones con clientes.',
+      en: '+4 years as a senior customer service representative in a leading multinational company, developing skills in effective communication, problem-solving, and customer relationship management.',
     },
   ],
   social: [
     {
       label: 'GitHub',
-      url: 'https://github.com/',
+      url: 'https://github.com/kniazev77',
     },
     {
       label: 'LinkedIn',
-      url: 'https://www.linkedin.com/',
+      url: 'https://www.linkedin.com/in/juan-kniazev/?locale=en',
     },
     {
       label: 'Email',
