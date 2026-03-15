@@ -88,7 +88,7 @@ function HomePage() {
   return (
     <main className="page-shell">
       <header className="topbar">
-        <p className="brand">Juan Portfolio</p>
+        <p className="brand">Juan Francisco Kniazev - Portfolio</p>
         <LanguageToggle language={language} onChange={setLanguage} />
       </header>
 
