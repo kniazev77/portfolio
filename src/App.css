@@ -54,9 +54,17 @@
   margin-bottom: 1rem;
 }
 
+.hero-side-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
 .hero-copy,
 .hero-side,
 .experience-section,
+.personal-section,
+.education-section,
 .projects-section,
 .detail-hero,
 .carousel,
@@ -111,8 +119,18 @@
   gap: 0.9rem;
 }
 
+.hero-side-contact {
+  justify-content: flex-start;
+}
+
+.hero-side-cv {
+  justify-content: space-between;
+}
+
 .hero-side h2,
 .experience-section h2,
+.personal-section h2,
+.education-section h2,
 .section-head h2,
 .detail-meta h2 {
   font-family: Fraunces, Georgia, serif;
@@ -125,12 +143,19 @@
   gap: 0.65rem;
 }
 
+.cv-download-list {
+  display: grid;
+  gap: 0.6rem;
+}
+
 .social-list a,
+.cv-download-button,
 .project-card-link,
 .back-link,
 .detail-meta a {
   display: inline-flex;
   align-items: center;
+  gap: 0.45rem;
   justify-content: center;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -139,7 +164,19 @@
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
+.cv-download-button {
+  width: 100%;
+  color: var(--accent);
+  background: var(--surface);
+  font-weight: 700;
+}
+
+.social-icon {
+  font-size: 1rem;
+}
+
 .social-list a:hover,
+.cv-download-button:hover,
 .project-card-link:hover,
 .back-link:hover,
 .detail-meta a:hover {
@@ -148,6 +185,16 @@
 }
 
 .experience-section {
+  margin-block: 1.25rem;
+  padding: 1.6rem;
+}
+
+.personal-section {
+  margin-block: 1.25rem;
+  padding: 1.6rem;
+}
+
+.education-section {
   margin-block: 1.25rem;
   padding: 1.6rem;
 }
@@ -173,6 +220,154 @@
   height: 0.38rem;
   border-radius: 50%;
   background: var(--accent);
+}
+
+.personal-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.personal-list li {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.personal-item-label {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.languages-block {
+  margin-top: 1.1rem;
+}
+
+.languages-block h3 {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.languages-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.languages-list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.55rem;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-soft);
+  padding: 0.6rem 0.8rem;
+  color: var(--muted);
+}
+
+.languages-list strong {
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+
+.education-intro {
+  margin-top: 0.9rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.education-block {
+  margin-top: 1.1rem;
+}
+
+.education-block h3 {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.education-list {
+  list-style: disc;
+  padding-left: 1.2rem;
+  display: block;
+}
+
+.education-list li {
+  color: var(--muted);
+  margin-top: 0.45rem;
+  line-height: 1.45;
+}
+
+.education-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+}
+
+.education-item-text {
+  flex: 1;
+}
+
+.education-item-actions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  flex-shrink: 0;
+}
+
+.education-item-badge {
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  color: var(--text);
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
+}
+
+.education-item-badge.is-completed {
+  border-color: #7fb798;
+  background: #e7f3ec;
+  color: #2f6f4b;
+}
+
+.education-item-badge.is-in-progress {
+  border-color: #86a9c7;
+  background: #e7f0f8;
+  color: #2f5878;
+}
+
+.education-item-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.education-item-link:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .education-item-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-item-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 .projects-section {
@@ -366,6 +561,10 @@
     grid-template-columns: 1fr;
   }
 
+  .hero-side-stack {
+    grid-template-rows: auto;
+  }
+
   .detail-meta {
     border-left: 0;
     border-top: 1px solid var(--line);
@@ -388,6 +587,7 @@
   .hero-copy,
   .hero-side,
   .experience-section,
+  .personal-section,
   .projects-section,
   .detail-hero,
   .carousel,
