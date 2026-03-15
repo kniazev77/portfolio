@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
+import { resolveAssetPath } from '../utils/assetPath'
 
 function ProjectCard({ project, language }) {
   return (
     <article className="project-card">
       <div className="project-card-image-wrap">
         <img
-          src={project.images[0]}
+          src={resolveAssetPath(project.images[0])}
           alt={project.title[language]}
           className="project-card-image"
         />

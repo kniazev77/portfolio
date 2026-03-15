@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { resolveAssetPath } from '../utils/assetPath'
 
 function ProjectCarousel({ images, projectTitle, language }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -31,7 +32,7 @@ function ProjectCarousel({ images, projectTitle, language }) {
           {images.map((image, index) => (
             <figure className="carousel-slide" key={image}>
               <img
-                src={image}
+                src={resolveAssetPath(image)}
                 alt={`${controlsLabel.image} ${index + 1} - ${projectTitle}`}
               />
             </figure>
