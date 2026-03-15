@@ -1,0 +1,413 @@
+.page-shell,
+.detail-shell {
+  width: min(1120px, 100% - 2.4rem);
+  margin: 1.6rem auto 2.8rem;
+  animation: rise-in 0.45s ease;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.brand {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.language-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  padding: 0.2rem;
+  gap: 0.2rem;
+}
+
+.language-toggle button {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.38rem 0.75rem;
+  cursor: pointer;
+}
+
+.language-toggle button.active {
+  background: var(--accent);
+  color: #f0f5f2;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.hero-copy,
+.hero-side,
+.experience-section,
+.projects-section,
+.detail-hero,
+.carousel,
+.detail-content,
+.not-found {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-copy {
+  padding: 2.25rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.35rem 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero-copy h1,
+.detail-hero h1,
+.not-found h1 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  line-height: 1.03;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+.hero-copy p,
+.detail-hero p,
+.detail-content p,
+.not-found p {
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+.hero-side {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.hero-side h2,
+.experience-section h2,
+.section-head h2,
+.detail-meta h2 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.4rem;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.social-list a,
+.project-card-link,
+.back-link,
+.detail-meta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.social-list a:hover,
+.project-card-link:hover,
+.back-link:hover,
+.detail-meta a:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+.experience-section {
+  margin-block: 1.25rem;
+  padding: 1.6rem;
+}
+
+.experience-section ul {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.experience-section li {
+  color: var(--muted);
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.experience-section li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.projects-section {
+  padding: 1.8rem;
+}
+
+.section-head {
+  margin-bottom: 1.1rem;
+}
+
+.section-head p {
+  color: var(--muted);
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fffffb;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-image-wrap {
+  height: 190px;
+  background: var(--bg-soft);
+}
+
+.project-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-content {
+  padding: 1rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.project-card-content h3 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.3rem;
+}
+
+.project-card-content p,
+.project-year {
+  color: var(--muted);
+}
+
+.project-year {
+  font-weight: 600;
+  font-size: 0.87rem;
+}
+
+.project-card-link {
+  align-self: flex-start;
+  margin: 0 1rem 1rem;
+  color: var(--accent);
+}
+
+.back-link {
+  color: var(--accent);
+  background: var(--surface);
+}
+
+.detail-hero,
+.carousel,
+.detail-content,
+.not-found {
+  padding: 1.65rem;
+  margin-bottom: 1.1rem;
+}
+
+.carousel-track-wrap {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: min(460px, 55vw);
+  margin: 0;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-controls button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  padding: 0.45rem 0.95rem;
+  cursor: pointer;
+}
+
+.carousel-dots {
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #bcc8bf;
+}
+
+.dot.active {
+  background: var(--accent);
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.4rem;
+}
+
+.detail-content p + p {
+  margin-top: 0.85rem;
+}
+
+.detail-meta {
+  border-left: 1px solid var(--line);
+  padding-left: 1.1rem;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.7rem 0 1.2rem;
+}
+
+.chip-list li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.link-list {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+}
+
+.not-found {
+  text-align: left;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 960px) {
+  .hero-section,
+  .detail-content,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-meta {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  .carousel-slide {
+    height: min(340px, 68vw);
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell,
+  .detail-shell {
+    width: min(1120px, 100% - 1.2rem);
+    margin-top: 0.9rem;
+  }
+
+  .hero-copy,
+  .hero-side,
+  .experience-section,
+  .projects-section,
+  .detail-hero,
+  .carousel,
+  .detail-content,
+  .not-found {
+    border-radius: 16px;
+    padding: 1.15rem;
+  }
+
+  .hero-copy h1,
+  .detail-hero h1,
+  .not-found h1 {
+    font-size: 1.95rem;
+  }
+
+  .carousel-controls {
+    gap: 0.65rem;
+  }
+
+  .carousel-controls button {
+    padding-inline: 0.7rem;
+  }
+}

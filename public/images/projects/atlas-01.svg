@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="atlasOneTitle">
+  <title id="atlasOneTitle">Atlas Commerce pantalla 1</title>
+  <defs>
+    <linearGradient id="atlasOneBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eff5ef"/>
+      <stop offset="100%" stop-color="#ccdccc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#atlasOneBg)"/>
+  <rect x="140" y="110" width="1320" height="680" rx="32" fill="#fffef8" stroke="#c6d2c2"/>
+  <rect x="190" y="170" width="420" height="48" rx="12" fill="#dbe8dc"/>
+  <rect x="190" y="245" width="1210" height="188" rx="18" fill="#ecf2ea"/>
+  <rect x="190" y="462" width="390" height="280" rx="18" fill="#f2f4ed"/>
+  <rect x="605" y="462" width="390" height="280" rx="18" fill="#f2f4ed"/>
+  <rect x="1010" y="462" width="390" height="280" rx="18" fill="#f2f4ed"/>
+  <text x="190" y="140" font-family="Segoe UI, sans-serif" font-size="34" fill="#274836">Atlas Commerce</text>
+</svg>
