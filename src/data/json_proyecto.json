@@ -1,0 +1,296 @@
+{
+  "proyectos": [
+    {
+      "id": "ip43-nba",
+      "slug": "ip43-nba",
+      "nombre": {
+        "es": "IP43 NBA",
+        "en": "IP43 NBA"
+      },
+      "titulo_corto": {
+        "es": "App cross-platform de predicciones NBA",
+        "en": "Cross-platform NBA prediction app"
+      },
+      "estado": {
+        "es": "En producción",
+        "en": "In production"
+      },
+      "tipo": {
+        "es": "Producto digital / App web y mobile",
+        "en": "Digital product / Web and mobile app"
+      },
+      "resumen": {
+        "es": "Aplicación cross-platform (web + mobile) para predicción de partidos NBA, con autenticación, grupos privados, rankings globales y por grupo, y sistema de puntuación basado en resultados reales.",
+        "en": "Cross-platform application (web + mobile) for NBA game predictions, with authentication, private groups, global and group rankings, and a scoring system based on real results."
+      },
+      "caso_negocio": {
+        "es": "Crear un producto digital de engagement deportivo que permita a usuarios competir entre sí mediante predicciones de partidos NBA, centralizando resultados, puntuaciones y rankings en una misma plataforma.",
+        "en": "Build a sports engagement digital product that allows users to compete through NBA game predictions, centralizing results, scores, and rankings on a single platform."
+      },
+      "problema_contexto": {
+        "es": "Las dinámicas de predicción deportiva suelen resolverse de forma manual o en plataformas poco personalizadas. El objetivo fue construir una experiencia propia, escalable y reutilizable, con lógica de puntuación automática, autenticación y gestión de grupos.",
+        "en": "Sports prediction dynamics are often handled manually or through low-customization platforms. The goal was to build an owned, scalable, and reusable experience with automatic scoring logic, authentication, and group management."
+      },
+      "propuesta_solucion": {
+        "es": "Desarrollar una aplicación web y mobile con backend serverless, autenticación social, persistencia de datos, integración con una API externa de NBA y lógica de negocio para calcular resultados, rankings y competencia entre usuarios.",
+        "en": "Develop a web and mobile app with a serverless backend, social authentication, data persistence, external NBA API integration, and business logic to compute results, rankings, and user competition."
+      },
+      "usuarios_objetivo": {
+        "es": [
+          "Fans de la NBA",
+          "Usuarios que quieran competir en grupos privados",
+          "Comunidades deportivas",
+          "Potenciales sponsors o iniciativas de engagement"
+        ],
+        "en": [
+          "NBA fans",
+          "Users who want to compete in private groups",
+          "Sports communities",
+          "Potential sponsors or engagement initiatives"
+        ]
+      },
+      "mi_rol": {
+        "rol_principal": {
+          "es": "Full-stack developer / Product builder",
+          "en": "Full-stack developer / Product builder"
+        },
+        "responsabilidades": {
+          "es": [
+            "Definición funcional del producto",
+            "Desarrollo frontend web y mobile",
+            "Diseño de modelo de datos",
+            "Implementación backend con Supabase",
+            "Integración con API externa de datos NBA",
+            "Configuración de autenticación",
+            "Despliegue y puesta en producción"
+          ],
+          "en": [
+            "Product functional definition",
+            "Web and mobile frontend development",
+            "Data model design",
+            "Backend implementation with Supabase",
+            "Integration with external NBA data API",
+            "Authentication setup",
+            "Production deployment"
+          ]
+        }
+      },
+      "solucion_entregada": {
+        "tipo": {
+          "es": "Aplicación web + mobile",
+          "en": "Web and mobile application"
+        },
+        "modulos_principales": {
+          "es": [
+            "Autenticación con Google OAuth",
+            "Predicción de partidos NBA",
+            "Sistema de puntuación",
+            "Rankings globales",
+            "Rankings por grupo",
+            "Grupos privados",
+            "Sincronización de datos NBA",
+            "Panel de partidos y resultados"
+          ],
+          "en": [
+            "Authentication with Google OAuth",
+            "NBA game predictions",
+            "Scoring system",
+            "Global rankings",
+            "Group rankings",
+            "Private groups",
+            "NBA data synchronization",
+            "Games and results panel"
+          ]
+        }
+      },
+      "tecnologias": {
+        "frontend": [
+          "React Native",
+          "Expo",
+          "TypeScript"
+        ],
+        "backend": [
+          "Supabase",
+          "Supabase Edge Functions",
+          "Supabase RPC Functions"
+        ],
+        "base_datos": [
+          "PostgreSQL"
+        ],
+        "autenticacion": [
+          "Supabase Auth",
+          "Google OAuth"
+        ],
+        "infraestructura_deploy": [
+          "Vercel"
+        ],
+        "apis_externas": [
+          "BALLDONTLIE API"
+        ]
+      },
+      "desafios": [
+        {
+          "titulo": {
+            "es": "Sincronización de datos deportivos externos",
+            "en": "External sports data synchronization"
+          },
+          "descripcion": {
+            "es": "Consumir y mantener actualizados los partidos, resultados y metadatos de la NBA desde una API externa.",
+            "en": "Consume and keep NBA games, results, and metadata updated from an external API."
+          },
+          "como_lo_resolvi": {
+            "es": "Integré BALLDONTLIE API y estructuré la lógica de actualización para desacoplar la fuente externa del resto del producto.",
+            "en": "I integrated the BALLDONTLIE API and structured update logic to decouple the external source from the rest of the product."
+          }
+        },
+        {
+          "titulo": {
+            "es": "Cálculo confiable de rankings y puntuaciones",
+            "en": "Reliable ranking and scoring calculation"
+          },
+          "descripcion": {
+            "es": "Garantizar consistencia entre predicciones, resultados reales y leaderboard global o por grupo.",
+            "en": "Ensure consistency between predictions, real outcomes, and global or group leaderboards."
+          },
+          "como_lo_resolvi": {
+            "es": "Centralicé la lógica de negocio en backend mediante funciones y reglas de cálculo apoyadas en Supabase/PostgreSQL.",
+            "en": "I centralized business logic in the backend through functions and calculation rules supported by Supabase/PostgreSQL."
+          }
+        },
+        {
+          "titulo": {
+            "es": "Experiencia cross-platform",
+            "en": "Cross-platform experience"
+          },
+          "descripcion": {
+            "es": "Mantener una misma base funcional para web y mobile sin duplicar lógica.",
+            "en": "Maintain one functional base for web and mobile without duplicating logic."
+          },
+          "como_lo_resolvi": {
+            "es": "Construí el frontend con React Native + Expo + TypeScript, reutilizando componentes y estructura de navegación.",
+            "en": "I built the frontend with React Native + Expo + TypeScript, reusing components and navigation structure."
+          }
+        },
+        {
+          "titulo": {
+            "es": "Gestión de grupos privados",
+            "en": "Private groups management"
+          },
+          "descripcion": {
+            "es": "Permitir competencia segmentada entre usuarios además del ranking global.",
+            "en": "Enable segmented competition between users in addition to the global ranking."
+          },
+          "como_lo_resolvi": {
+            "es": "Modelé grupos privados y relaciones entre usuarios, predicciones y puntuaciones dentro de la base de datos.",
+            "en": "I modeled private groups and relationships between users, predictions, and scores within the database."
+          }
+        }
+      ],
+      "decisiones_tecnicas": {
+        "es": [
+          "Uso de Supabase como backend para acelerar autenticación, base de datos y funciones serverless.",
+          "Uso de React Native + Expo para reutilizar lógica y experiencia entre mobile y web.",
+          "Separación entre datos deportivos externos y lógica propia del producto."
+        ],
+        "en": [
+          "Use of Supabase as backend to accelerate authentication, database, and serverless functions.",
+          "Use of React Native + Expo to reuse logic and experience across mobile and web.",
+          "Separation between external sports data and proprietary product logic."
+        ]
+      },
+      "resultado_impacto": {
+        "resultado_general": {
+          "es": "Producto desarrollado y desplegado en producción.",
+          "en": "Product built and deployed in production."
+        },
+        "impactos_cualitativos": {
+          "es": [
+            "Validación de una idea de producto digital en el ámbito deportivo",
+            "Experiencia real construyendo una app cross-platform",
+            "Implementación end-to-end desde producto hasta despliegue",
+            "Base reutilizable para futuras ideas de productos y modelos similares"
+          ],
+          "en": [
+            "Validation of a digital product idea in the sports domain",
+            "Real-world experience building a cross-platform app",
+            "End-to-end implementation from product to deployment",
+            "Reusable foundation for future product ideas and similar models"
+          ]
+        },
+        "metricas": {
+          "usuarios": null,
+          "grupos_creados": null,
+          "partidos_procesados": null,
+          "otras_metricas": []
+        }
+      },
+      "features_destacadas": {
+        "es": [
+          "Google OAuth",
+          "Grupos privados",
+          "Leaderboards globales",
+          "Leaderboards por grupo",
+          "Sistema de puntos",
+          "Predicción de partidos NBA",
+          "Deploy web"
+        ],
+        "en": [
+          "Google OAuth",
+          "Private groups",
+          "Global leaderboards",
+          "Group leaderboards",
+          "Points system",
+          "NBA game prediction",
+          "Web deployment"
+        ]
+      },
+      "capturas_galeria": [
+        "/images/projects/ip43nba-login.jpg",
+        "/images/projects/ip43nba-games.jpg",
+        "/images/projects/ip43nba-games1.jpg",
+        "/images/projects/ip43nba-predictions.jpg",
+        "/images/projects/ip43nba-mypredictions.jpg",
+        "/images/projects/ip43nba-groups.jpg",
+        "/images/projects/ip43nba-group.jpg",
+        "/images/projects/ip43nba-profile.jpg",
+        "/images/projects/ip43nba-rankingglobal.jpg"
+        ],
+      "links": {
+        "demo": "",
+        "repositorio": "",
+        "web": "https://ip43-nba.vercel.app/login",
+        "app_store": "",
+        "play_store": "",
+        "video_demo": "/videos/ip43nba_flow.mp4"
+      },
+      "tags": {
+        "es": [
+          ".NET mindset",
+          "Desarrollo de producto",
+          "Tecnología deportiva",
+          "React Native",
+          "Supabase",
+          "PostgreSQL",
+          "TypeScript"
+        ],
+        "en": [
+          ".NET mindset",
+          "Product development",
+          "Sports tech",
+          "React Native",
+          "Supabase",
+          "PostgreSQL",
+          "TypeScript"
+        ]
+      },
+      "idiomas_disponibles": [
+        "es",
+        "en"
+      ],
+      "fecha_inicio": "",
+      "fecha_fin": "",
+      "destacado": true,
+      "orden": 1
+    }
+  ]
+}

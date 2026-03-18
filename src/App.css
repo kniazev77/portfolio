@@ -408,6 +408,15 @@
   object-fit: cover;
 }
 
+.project-card-placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .project-card-content {
   padding: 1rem;
   display: grid;
@@ -465,10 +474,15 @@
   margin: 0;
 }
 
-.carousel-slide img {
+.carousel-slide img,
+.carousel-slide video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.carousel-slide video {
+  background: #000;
 }
 
 .carousel-controls {
@@ -514,6 +528,61 @@
   margin-top: 0.85rem;
 }
 
+.detail-main,
+.detail-meta {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.detail-block {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fffffb;
+  padding: 1rem;
+}
+
+.detail-block h2 {
+  margin-bottom: 0.55rem;
+}
+
+.detail-block h3 {
+  font-size: 0.95rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.45rem;
+  color: var(--text);
+}
+
+.detail-list {
+  margin-top: 0.4rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.detail-list li {
+  color: var(--muted);
+}
+
+.challenge-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.challenge-item {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-soft);
+  padding: 0.75rem;
+}
+
+.challenge-item h3 {
+  margin-top: 0;
+}
+
+.tech-groups {
+  display: grid;
+  gap: 0.75rem;
+}
+
 .detail-meta {
   border-left: 1px solid var(--line);
   padding-left: 1.1rem;
@@ -541,6 +610,18 @@
 
 .not-found {
   text-align: left;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @keyframes rise-in {

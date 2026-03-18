@@ -1,98 +1,120 @@
-export const projects = [
-  {
-    id: 'atlas-commerce',
-    title: {
-      es: 'Atlas Commerce',
-      en: 'Atlas Commerce',
+import source from './json_proyecto.json'
+
+const emptyLocale = { es: '', en: '' }
+
+const toLocale = (value) => {
+  if (!value) {
+    return emptyLocale
+  }
+
+  if (typeof value === 'object' && ('es' in value || 'en' in value)) {
+    const esValue = value.es ?? value.en ?? ''
+    const enValue = value.en ?? value.es ?? ''
+    return { es: String(esValue), en: String(enValue) }
+  }
+
+  return { es: String(value), en: String(value) }
+}
+
+const toLocaleArray = (value) => {
+  if (value && typeof value === 'object' && !Array.isArray(value) && ('es' in value || 'en' in value)) {
+    const esArray = Array.isArray(value.es) ? value.es.map((item) => String(item)) : []
+    const enArray = Array.isArray(value.en) ? value.en.map((item) => String(item)) : []
+
+    return {
+      es: esArray.length > 0 ? esArray : enArray,
+      en: enArray.length > 0 ? enArray : esArray,
+    }
+  }
+
+  if (!Array.isArray(value) || value.length === 0) {
+    return { es: [], en: [] }
+  }
+
+  const normalized = value.map((item) => String(item))
+  return { es: normalized, en: normalized }
+}
+
+const normalizeMedia = (project) => {
+  const imageEntries = Array.isArray(project.capturas_galeria)
+    ? project.capturas_galeria.map((src) => ({ src, type: 'image' }))
+    : []
+
+  const rawVideo = project.links?.video_demo
+  const videoSources = Array.isArray(rawVideo)
+    ? rawVideo.filter(Boolean)
+    : rawVideo
+      ? [rawVideo]
+      : []
+
+  const videoEntries = videoSources.map((src) => ({ src, type: 'video' }))
+
+  return [...imageEntries, ...videoEntries]
+}
+
+const normalizeTechnologies = (project) => {
+  const tech = project.tecnologias ?? {}
+  return {
+    frontend: tech.frontend ?? [],
+    backend: tech.backend ?? [],
+    baseDatos: tech.base_datos ?? [],
+    autenticacion: tech.autenticacion ?? [],
+    infraestructura: tech.infraestructura_deploy ?? [],
+    apisExternas: tech.apis_externas ?? [],
+  }
+}
+
+const normalizeLinks = (project) => {
+  const links = project.links ?? {}
+  return {
+    demo: links.demo ?? '',
+    repositorio: links.repositorio ?? '',
+    web: links.web ?? '',
+    appStore: links.app_store ?? '',
+    playStore: links.play_store ?? '',
+    videoDemo: links.video_demo ?? '',
+  }
+}
+
+export const projects = (source.proyectos ?? [])
+  .map((project) => ({
+    id: project.id,
+    slug: project.slug,
+    title: toLocale(project.nombre),
+    shortTitle: toLocale(project.titulo_corto),
+    summary: toLocale(project.resumen),
+    status: toLocale(project.estado),
+    kind: toLocale(project.tipo),
+    businessCase: toLocale(project.caso_negocio),
+    contextProblem: toLocale(project.problema_contexto),
+    proposedSolution: toLocale(project.propuesta_solucion),
+    targetUsers: toLocaleArray(project.usuarios_objetivo),
+    role: {
+      main: toLocale(project.mi_rol?.rol_principal),
+      responsibilities: toLocaleArray(project.mi_rol?.responsabilidades),
     },
-    summary: {
-      es: 'Ecommerce modular para escalar catalogo y conversion en equipos pequenos.',
-      en: 'Modular ecommerce built to scale catalog and conversion with small teams.',
+    deliveredSolution: {
+      type: toLocale(project.solucion_entregada?.tipo),
+      modules: toLocaleArray(project.solucion_entregada?.modulos_principales),
     },
-    description: {
-      es: [
-        'Atlas Commerce fue disenado para unificar experiencia de compra, contenido promocional y analitica de conversion en una sola interfaz.',
-        'La solucion se concentro en tiempos de carga, navegacion clara y una estructura de componentes reutilizable para crecer sin perder consistencia visual.',
-      ],
-      en: [
-        'Atlas Commerce was designed to unify checkout experience, promotional content, and conversion analytics in a single interface.',
-        'The solution focused on loading speed, clear navigation, and reusable components to scale without losing visual consistency.',
-      ],
+    technologies: normalizeTechnologies(project),
+    challenges: Array.isArray(project.desafios)
+      ? project.desafios.map((challenge) => ({
+          title: toLocale(challenge.titulo),
+          description: toLocale(challenge.descripcion),
+          resolution: toLocale(challenge.como_lo_resolvi),
+        }))
+      : [],
+    impact: {
+      generalResult: toLocale(project.resultado_impacto?.resultado_general),
+      qualitativeImpacts: toLocaleArray(project.resultado_impacto?.impactos_cualitativos),
+      metrics: project.resultado_impacto?.metricas ?? {},
     },
-    technologies: ['React', 'Vite', 'TypeScript', 'Stripe'],
-    year: '2025',
-    links: {
-      repo: 'https://github.com/',
-      live: 'https://example.com',
-    },
-    images: [
-      '/images/projects/atlas-01.svg',
-      '/images/projects/atlas-02.svg',
-      '/images/projects/atlas-03.svg',
-    ],
-  },
-  {
-    id: 'north-dashboard',
-    title: {
-      es: 'North Dashboard',
-      en: 'North Dashboard',
-    },
-    summary: {
-      es: 'Panel operativo con foco en visibilidad de metricas y decisiones rapidas.',
-      en: 'Operations dashboard focused on metric visibility and fast decisions.',
-    },
-    description: {
-      es: [
-        'North Dashboard centraliza indicadores comerciales y operativos para equipos que necesitan accion inmediata sobre datos vivos.',
-        'La experiencia prioriza jerarquia visual, filtros eficientes y consistencia para reducir tiempo de lectura en contextos de alta demanda.',
-      ],
-      en: [
-        'North Dashboard centralizes business and operational metrics for teams that need immediate action from live data.',
-        'The experience prioritizes visual hierarchy, efficient filtering, and consistency to reduce reading time in high-pressure contexts.',
-      ],
-    },
-    technologies: ['React', 'D3', 'Node.js', 'PostgreSQL'],
-    year: '2024',
-    links: {
-      repo: 'https://github.com/',
-      live: 'https://example.com',
-    },
-    images: [
-      '/images/projects/north-01.svg',
-      '/images/projects/north-02.svg',
-      '/images/projects/north-03.svg',
-    ],
-  },
-  {
-    id: 'studio-booking',
-    title: {
-      es: 'Studio Booking',
-      en: 'Studio Booking',
-    },
-    summary: {
-      es: 'Plataforma de reservas con experiencia movil simple y control administrativo.',
-      en: 'Booking platform with simple mobile UX and full admin control.',
-    },
-    description: {
-      es: [
-        'Studio Booking conecta usuarios con servicios locales mediante una interfaz limpia y orientada a conversion movil.',
-        'Se incorporaron automatizaciones para confirmar turnos, reducir ausencias y darle al equipo interno una operacion diaria mas eficiente.',
-      ],
-      en: [
-        'Studio Booking connects users with local services through a clean interface optimized for mobile conversion.',
-        'Automations were added to confirm appointments, reduce no-shows, and make daily operations more efficient for the internal team.',
-      ],
-    },
-    technologies: ['React', 'Firebase', 'Cloud Functions', 'Figma'],
-    year: '2023',
-    links: {
-      repo: 'https://github.com/',
-      live: 'https://example.com',
-    },
-    images: [
-      '/images/projects/studio-01.svg',
-      '/images/projects/studio-02.svg',
-      '/images/projects/studio-03.svg',
-    ],
-  },
-]
+    links: normalizeLinks(project),
+    tags: toLocaleArray(project.tags),
+    languages: project.idiomas_disponibles ?? [],
+    featured: Boolean(project.destacado),
+    order: Number(project.orden ?? 0),
+    media: normalizeMedia(project),
+  }))
+  .sort((a, b) => a.order - b.order)

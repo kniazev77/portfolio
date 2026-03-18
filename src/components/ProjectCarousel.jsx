@@ -1,18 +1,23 @@
 import { useMemo, useState } from 'react'
 import { resolveAssetPath } from '../utils/assetPath'
 
-function ProjectCarousel({ images, projectTitle, language }) {
+function ProjectCarousel({ media, projectTitle, language }) {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const total = images.length
+  const total = media.length
 
   const controlsLabel = useMemo(
     () => ({
       previous: language === 'es' ? 'Anterior' : 'Previous',
       next: language === 'es' ? 'Siguiente' : 'Next',
       image: language === 'es' ? 'Imagen' : 'Image',
+      video: language === 'es' ? 'Video' : 'Video',
     }),
     [language],
   )
+
+  if (total === 0) {
+    return null
+  }
 
   const goPrevious = () => {
     setCurrentIndex((prev) => (prev - 1 + total) % total)
@@ -29,12 +34,23 @@ function ProjectCarousel({ images, projectTitle, language }) {
           className="carousel-track"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {images.map((image, index) => (
-            <figure className="carousel-slide" key={image}>
-              <img
-                src={resolveAssetPath(image)}
-                alt={`${controlsLabel.image} ${index + 1} - ${projectTitle}`}
-              />
+          {media.map((item, index) => (
+            <figure className="carousel-slide" key={`${item.src}-${index}`}>
+              {item.type === 'video' ? (
+                <video controls preload="metadata">
+                  <source src={resolveAssetPath(item.src)} type="video/mp4" />
+                </video>
+              ) : (
+                <img
+                  src={resolveAssetPath(item.src)}
+                  alt={`${controlsLabel.image} ${index + 1} - ${projectTitle}`}
+                />
+              )}
+              <figcaption className="sr-only">
+                {item.type === 'video'
+                  ? `${controlsLabel.video} ${index + 1}`
+                  : `${controlsLabel.image} ${index + 1}`}
+              </figcaption>
             </figure>
           ))}
         </div>
@@ -45,10 +61,10 @@ function ProjectCarousel({ images, projectTitle, language }) {
           {controlsLabel.previous}
         </button>
         <div className="carousel-dots" aria-hidden="true">
-          {images.map((image, index) => (
+          {media.map((item, index) => (
             <span
               className={index === currentIndex ? 'dot active' : 'dot'}
-              key={`${image}-${index}`}
+              key={`${item.src}-${index}`}
             ></span>
           ))}
         </div>
