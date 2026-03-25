@@ -32,6 +32,13 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          VITE_GITHUB_OWNER: ${{ vars.VITE_GITHUB_OWNER || secrets.VITE_GITHUB_OWNER }}
+          VITE_GITHUB_REPO: ${{ vars.VITE_GITHUB_REPO || secrets.VITE_GITHUB_REPO }}
+          VITE_GITHUB_BRANCH: ${{ vars.VITE_GITHUB_BRANCH || secrets.VITE_GITHUB_BRANCH }}
+          VITE_GITHUB_ALLOWED_USER: ${{ vars.VITE_GITHUB_ALLOWED_USER || secrets.VITE_GITHUB_ALLOWED_USER }}
+          VITE_GITHUB_OAUTH_CLIENT_ID: ${{ vars.VITE_GITHUB_OAUTH_CLIENT_ID || secrets.VITE_GITHUB_OAUTH_CLIENT_ID }}
+          VITE_GITHUB_PROJECTS_PATH: ${{ vars.VITE_GITHUB_PROJECTS_PATH || secrets.VITE_GITHUB_PROJECTS_PATH }}
         run: npm run build
 
       - name: Upload artifact

@@ -1,11 +1,13 @@
-# Project docs source
+# Projects content source
 
-Place your original .docx files here.
+Each file in this folder is one project in JSON format.
 
 Suggested naming:
-- atlas-commerce.docx
-- north-dashboard.docx
-- studio-booking.docx
+- my-project-slug.json
 
-This portfolio currently uses manual data from src/data/projects.js for rendering.
-The .docx files stay in the repository as source material.
+Rules:
+- File name must match the project slug.
+- Keep one project object per file (no wrapping array).
+- The frontend loads every .json from this folder during build.
+
+This directory is now the source of truth for projects rendered in the portfolio.

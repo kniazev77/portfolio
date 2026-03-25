@@ -15,6 +15,7 @@ Sitio web estatico personal para presentar proyectos en formato portfolio.
 - Selector de idioma ES/EN
 - Estilo minimalista claro y responsive
 - Workflow de deploy para GitHub Pages
+- Panel admin privado para crear/editar proyectos y guardar en GitHub
 
 ## Scripts
 
@@ -25,20 +26,55 @@ Sitio web estatico personal para presentar proyectos en formato portfolio.
 ## Estructura principal
 
 - src/data/projects.js: datos de cards y detalle por proyecto
+- src/pages/AdminProjectPage.jsx: formulario admin privado
+- src/services/githubAdminApi.js: GitHub OAuth + escritura al repo
 - src/data/profile.js: presentacion, experiencia y redes
 - src/pages/HomePage.jsx: pantalla principal
 - src/pages/ProjectDetailPage.jsx: pantalla de detalle
 - src/components/ProjectCarousel.jsx: carrusel horizontal
 - public/images/projects: imagenes de cada proyecto
-- content/projects: carpeta para guardar .docx fuente
+- content/projects: fuente de verdad de proyectos (.json por proyecto)
 - .github/workflows/deploy.yml: pipeline de GitHub Pages
 
 ## Personalizacion rapida
 
 1. Editar tu presentacion y redes en src/data/profile.js
-2. Editar o agregar proyectos en src/data/projects.js
-3. Reemplazar imagenes SVG/PNG en public/images/projects
-4. Agregar .docx originales en content/projects
+2. Ir a /#/admin para crear o actualizar proyectos
+3. Cargar assets en public/images/projects y public/videos
+4. Publicar desde el formulario para generar commit automatico
+
+## Admin privado de proyectos
+
+Ruta:
+- /#/admin
+
+La autenticacion valida que:
+- el usuario de GitHub sea el definido en VITE_GITHUB_ALLOWED_USER
+- la cuenta tenga permisos write sobre el repositorio
+
+Configura .env.local basado en .env.example:
+
+- VITE_GITHUB_OWNER
+- VITE_GITHUB_REPO
+- VITE_GITHUB_BRANCH
+- VITE_GITHUB_ALLOWED_USER
+- VITE_GITHUB_OAUTH_CLIENT_ID
+- VITE_GITHUB_PROJECTS_PATH
+
+Notas:
+- Puedes usar GitHub OAuth Device Flow.
+- El panel crea/actualiza content/projects/{slug}.json y eso dispara el deploy de Pages.
+- El formulario solo se habilita despues del login con GitHub y validacion de permisos write.
+
+Produccion (GitHub Pages):
+- Define estas variables en GitHub (Settings > Secrets and variables > Actions):
+  - VITE_GITHUB_OWNER
+  - VITE_GITHUB_REPO
+  - VITE_GITHUB_BRANCH
+  - VITE_GITHUB_ALLOWED_USER
+  - VITE_GITHUB_OAUTH_CLIENT_ID
+  - VITE_GITHUB_PROJECTS_PATH
+- El workflow de deploy inyecta esas variables al build para que /#/admin funcione online.
 
 ## GitHub Pages
 
@@ -48,6 +84,8 @@ Este repo ya trae workflow de Pages.
 2. En GitHub, ir a Settings > Pages
 3. En Build and deployment, seleccionar GitHub Actions
 4. Esperar el workflow Deploy to GitHub Pages
+
+Cuando publicas un proyecto desde /#/admin, se crea un commit en main y este workflow se ejecuta automaticamente.
 
 ## Nota sobre rutas
 

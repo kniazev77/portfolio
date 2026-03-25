@@ -1,4 +1,11 @@
-import source from './json_proyecto.json'
+import legacySource from './json_proyecto.json'
+
+const contentModules = import.meta.glob('../../content/projects/*.json', { eager: true })
+const contentProjects = Object.values(contentModules)
+  .map((module) => module?.default ?? module)
+  .filter(Boolean)
+
+const sourceProjects = contentProjects.length > 0 ? contentProjects : legacySource.proyectos ?? []
 
 const emptyLocale = { es: '', en: '' }
 
@@ -76,7 +83,7 @@ const normalizeLinks = (project) => {
   }
 }
 
-export const projects = (source.proyectos ?? [])
+export const projects = sourceProjects
   .map((project) => ({
     id: project.id,
     slug: project.slug,
