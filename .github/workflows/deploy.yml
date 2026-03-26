@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   build:
+    environment: github-pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,6 +31,22 @@ jobs:
 
       - name: Install
         run: npm ci
+
+      - name: Validate admin env vars
+        env:
+          VITE_GITHUB_OWNER: ${{ vars.VITE_GITHUB_OWNER || secrets.VITE_GITHUB_OWNER }}
+          VITE_GITHUB_REPO: ${{ vars.VITE_GITHUB_REPO || secrets.VITE_GITHUB_REPO }}
+          VITE_GITHUB_OAUTH_CLIENT_ID: ${{ vars.VITE_GITHUB_OAUTH_CLIENT_ID || secrets.VITE_GITHUB_OAUTH_CLIENT_ID }}
+        run: |
+          missing=""
+          [ -z "$VITE_GITHUB_OWNER" ] && missing="$missing VITE_GITHUB_OWNER"
+          [ -z "$VITE_GITHUB_REPO" ] && missing="$missing VITE_GITHUB_REPO"
+          [ -z "$VITE_GITHUB_OAUTH_CLIENT_ID" ] && missing="$missing VITE_GITHUB_OAUTH_CLIENT_ID"
+
+          if [ -n "$missing" ]; then
+            echo "::error::Missing required variables for admin build:$missing"
+            exit 1
+          fi
 
       - name: Build
         env:
