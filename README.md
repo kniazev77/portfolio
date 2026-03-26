@@ -62,7 +62,9 @@ Configura .env.local basado en .env.example:
 - VITE_GITHUB_PROJECTS_PATH
 
 Notas:
-- Puedes usar GitHub OAuth Device Flow.
+- En GitHub Pages, usa token personal (PAT) para iniciar sesion desde /#/admin.
+- OAuth Device Flow desde frontend puede fallar por CORS en los endpoints de github.com/login/oauth/*.
+- Si usas PAT Fine-grained, asigna permisos del repositorio: Contents (Read and write).
 - El panel crea/actualiza content/projects/{slug}.json y eso dispara el deploy de Pages.
 - El formulario solo se habilita despues del login con GitHub y validacion de permisos write.
 

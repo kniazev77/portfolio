@@ -85,6 +85,7 @@ function AdminProjectPage() {
   const [busy, setBusy] = useState(false)
   const [message, setMessage] = useState('')
   const [deviceLogin, setDeviceLogin] = useState(null)
+  const [manualToken, setManualToken] = useState('')
   const [auth, setAuth] = useState(() => ({
     token: savedSession?.token ?? '',
     userLogin: savedSession?.userLogin ?? '',
@@ -197,8 +198,34 @@ function AdminProjectPage() {
   const logout = () => {
     setAuth({ token: '', userLogin: '', authorized: false })
     setDeviceLogin(null)
+    setManualToken('')
     sessionStorage.removeItem(AUTH_STORAGE_KEY)
     setMessage('Sesion cerrada.')
+  }
+
+  const loginWithPersonalToken = async () => {
+    const token = manualToken.trim()
+
+    if (!token) {
+      setMessage('Ingresa un token personal de GitHub para continuar.')
+      return
+    }
+
+    setBusy(true)
+    setMessage('Validando token personal...')
+
+    try {
+      const user = await authorizeWithToken(token)
+      setManualToken('')
+      setDeviceLogin(null)
+      setMessage(`Sesion iniciada como ${user.login}. Ya puedes publicar proyectos.`)
+    } catch (error) {
+      setAuth({ token: '', userLogin: '', authorized: false })
+      sessionStorage.removeItem(AUTH_STORAGE_KEY)
+      setMessage(error.message ?? 'No se pudo validar el token personal.')
+    } finally {
+      setBusy(false)
+    }
   }
 
   const resetForm = () => {
@@ -309,14 +336,45 @@ function AdminProjectPage() {
             </button>
           </div>
         ) : (
-          <button
-            type="button"
-            className="admin-primary-button"
-            onClick={loginWithGitHub}
-            disabled={busy || !isConfigReady}
-          >
-            {busy ? 'Conectando...' : 'Iniciar sesion con GitHub'}
-          </button>
+          <>
+            <div className="admin-grid two-cols">
+              <label className="full-width">
+                Token personal de GitHub (PAT)
+                <input
+                  type="password"
+                  value={manualToken}
+                  onChange={(event) => setManualToken(event.target.value)}
+                  placeholder="github_pat_..."
+                  autoComplete="off"
+                />
+              </label>
+            </div>
+
+            <div className="admin-auth-actions">
+              <button
+                type="button"
+                className="admin-primary-button"
+                onClick={loginWithPersonalToken}
+                disabled={busy || !manualToken.trim()}
+              >
+                {busy ? 'Validando token...' : 'Iniciar con token personal'}
+              </button>
+
+              <button
+                type="button"
+                className="admin-secondary-button"
+                onClick={loginWithGitHub}
+                disabled={busy || !isConfigReady}
+              >
+                {busy ? 'Conectando...' : 'Probar OAuth Device Flow'}
+              </button>
+            </div>
+
+            <p>
+              Recomendado en GitHub Pages: usar token personal Fine-grained con permisos de repositorio (Contents: Read and
+              write) para evitar bloqueos CORS del OAuth en navegador.
+            </p>
+          </>
         )}
 
         {deviceLogin && !auth.authorized && (
