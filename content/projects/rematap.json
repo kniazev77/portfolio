@@ -1,0 +1,302 @@
+{
+  "id": "rematap",
+  "slug": "rematap",
+  "nombre": {
+    "es": "Rematap",
+    "en": "Rematap"
+  },
+  "titulo_corto": {
+    "es": "App social de subastas y marketplace",
+    "en": "Social auction and marketplace app"
+  },
+  "estado": {
+    "es": "En desarrollo (MVP)",
+    "en": "In development (MVP)"
+  },
+  "tipo": {
+    "es": "Producto digital / App web y mobile",
+    "en": "Digital product / Web and mobile app"
+  },
+  "resumen": {
+    "es": "Plataforma cross‑platform para publicar objetos de segunda mano, administrar subastas con incrementos mínimos del 5 %, filtrar por categoría, precio y ubicación, y chatear con el ganador al finalizar la subasta.",
+    "en": "Cross‑platform platform to list second‑hand items, manage auctions with 5 % minimum increments, filter by category, price and location, and chat with the winner once the auction ends."
+  },
+  "caso_negocio": {
+    "es": "Crear una solución social de subastas que permita a personas y pequeños vendedores monetizar productos usados mediante pujas temporizadas, con reglas claras, filtros y comunicación integrada.",
+    "en": "Create a social auction solution that allows individuals and small sellers to monetize used products through timed bids, with clear rules, filters and integrated communication."
+  },
+  "problema_contexto": {
+    "es": "Las ventas de segunda mano y las subastas informales suelen gestionarse en plataformas genéricas o grupos sociales sin protección. No existe una app local que integre publicación, puja segura y chat tras la subasta.",
+    "en": "Second‑hand sales and informal auctions are often handled in generic platforms or social groups without safeguards. There is no local app that integrates listing, secure bidding and post‑auction chat."
+  },
+  "propuesta_solucion": {
+    "es": "Diseñar y desarrollar una aplicación web y mobile con backend sin servidor que permita crear publicaciones con hasta cinco imágenes, fijar precio base, categoría, moneda y fecha fin, y gestionar subastas con incrementos automáticos del 5 % y chat entre vendedor y ganador. La lógica de negocio se centraliza en funciones RPC de Supabase y las políticas RLS garantizan que cada usuario solo acceda a lo que le corresponde.",
+    "en": "Design and build a web and mobile application with a serverless backend that lets users create listings with up to five images, set base price, category, currency and end date, and manage auctions with automatic 5 % increments and chat between seller and winner. Business logic is centralized in Supabase RPC functions and RLS policies ensure each user only accesses what they are entitled to."
+  },
+  "usuarios_objetivo": {
+    "es": [
+      "Personas que venden objetos de segunda mano",
+      "Compradores interesados en subastas online",
+      "Emprendedores y micro comerciantes",
+      "Usuarios que buscan un marketplace con chat y reglas claras"
+    ],
+    "en": [
+      "People selling second‑hand items",
+      "Buyers interested in online auctions",
+      "Entrepreneurs and micro‑merchants",
+      "Users looking for a marketplace with chat and clear rules"
+    ]
+  },
+  "mi_rol": {
+    "rol_principal": {
+      "es": "Full‑stack developer / Product builder",
+      "en": "Full‑stack developer / Product builder"
+    },
+    "responsabilidades": {
+      "es": [
+        "Definición funcional del MVP y roadmap de funcionalidades",
+        "Desarrollo frontend en Expo/React Native Web y TypeScript",
+        "Diseño de modelo de datos y políticas RLS en Supabase",
+        "Implementación de funciones RPC para pujas atómicas y chat",
+        "Construcción de componentes de UI, formularios y filtros",
+        "Gestión de autenticación y perfiles de usuario",
+        "Pruebas end‑to‑end del flujo de subasta y chat"
+      ],
+      "en": [
+        "Functional definition of the MVP and feature roadmap",
+        "Frontend development with Expo/React Native Web and TypeScript",
+        "Data model design and RLS policy configuration in Supabase",
+        "Implementation of RPC functions for atomic bids and chat",
+        "Building UI components, forms and filters",
+        "Authentication and user profile management",
+        "End‑to‑end testing of the auction and chat flow"
+      ]
+    }
+  },
+  "solucion_entregada": {
+    "tipo": {
+      "es": "Aplicación web + mobile",
+      "en": "Web and mobile application"
+    },
+    "modulos_principales": {
+      "es": [
+        "Autenticación con email/contraseña (Google OAuth pendiente)",
+        "Onboarding obligatorio de perfil (país, ciudad, código postal)",
+        "Creación de publicaciones con título, descripción, precio base, moneda (ARS/ARS/USD), categoría y hasta 5 imágenes",
+        "Selección de fecha y hora de finalización de subasta",
+        "Feed de marketplace con filtros por precio, categoría y ubicación y orden por fecha/precio",
+        "Visualización de detalles de la publicación con imágenes, descripción, pujas y próxima puja mínima",
+        "Sistema de pujas con incremento mínimo del 5 % y validación atómica mediante función `place_bid`",
+        "Chat privado entre vendedor y ganador tras finalizar la subasta",
+        "Gestión de mis publicaciones: editar título/descripción, modificar precio (si no hay pujas), pausar/activar y eliminar (soft delete)",
+        "Panel de mis subastas (activas, ganadas, perdidas)",
+        "Soporte multilenguaje (español, inglés, francés)"
+      ],
+      "en": [
+        "Authentication with email/password (Google OAuth pending)",
+        "Mandatory profile onboarding (country, city, postal code)",
+        "Listing creation with title, description, base price, currency (ARS/ARS/USD), category and up to 5 images",
+        "Selection of auction end date and time",
+        "Marketplace feed with filters by price, category and location and sorting by date/price",
+        "Listing detail view showing images, description, bids and next minimum bid",
+        "Bidding system with 5 % minimum increment and atomic validation via `place_bid` function",
+        "Private chat between seller and winner after the auction ends",
+        "My listings management: edit title/description, modify price (if no bids), pause/activate and delete (soft delete)",
+        "My auctions panel (active, won, lost)",
+        "Multi‑language support (Spanish, English, French)"
+      ]
+    }
+  },
+  "tecnologias": {
+    "frontend": [
+      "Expo",
+      "React Native",
+      "React Native Web",
+      "Expo Router",
+      "TanStack Query",
+      "TypeScript"
+    ],
+    "backend": [
+      "Supabase",
+      "Supabase RPC Functions"
+    ],
+    "base_datos": [
+      "PostgreSQL"
+    ],
+    "autenticacion": [
+      "Supabase Auth (email/contraseña)",
+      "Google OAuth (planificado)"
+    ],
+    "infraestructura_deploy": [
+      "Supabase",
+      "Expo / Vercel"
+    ],
+    "apis_externas": []
+  },
+  "desafios": [
+    {
+      "titulo": {
+        "es": "Incremento mínimo y consistencia en pujas",
+        "en": "Minimum increment and bidding consistency"
+      },
+      "descripcion": {
+        "es": "Asegurar que cada nueva puja respete un incremento mínimo del 5 % sobre la oferta actual o el precio base y que múltiples usuarios no puedan sobrepujarse de forma incorrecta.",
+        "en": "Ensure that each new bid respects a minimum 5 % increment over the current offer or base price and prevent multiple users from overbidding incorrectly."
+      },
+      "como_lo_resolvi": {
+        "es": "Implementé una función SQL `place_bid` en Supabase que calcula el mínimo requerido y valida, de manera atómica, el estado de la subasta, la fecha de finalización y que el postor no sea el propietario. De esta forma, se evita cualquier carrera de condiciones.",
+        "en": "I implemented a SQL function `place_bid` in Supabase that calculates the required minimum and atomically validates the auction status, end time and that the bidder is not the owner. This prevents race conditions."
+      }
+    },
+    {
+      "titulo": {
+        "es": "Seguridad y restricciones de acceso",
+        "en": "Security and access restrictions"
+      },
+      "descripcion": {
+        "es": "Proteger datos sensibles (perfiles, publicaciones, pujas, conversaciones) para que solo los usuarios autorizados los visualicen o modifiquen, incluidos estados de subasta y chat.",
+        "en": "Protect sensitive data (profiles, listings, bids, conversations) so that only authorized users can view or modify them, including auction and chat states."
+      },
+      "como_lo_resolvi": {
+        "es": "Definí políticas de nivel de fila (RLS) en todas las tablas de Supabase, permitiendo lectura y escritura solo a propietarios o participantes. Para el chat, la función `get_or_create_conversation` valida que la subasta haya terminado y que los participantes sean el vendedor y el ganador.",
+        "en": "I defined row‑level security policies on all Supabase tables, allowing read and write only to owners or participants. For chat, the `get_or_create_conversation` function validates that the auction has ended and that participants are the seller and the winner."
+      }
+    },
+    {
+      "titulo": {
+        "es": "Experiencia cross‑platform y multilenguaje",
+        "en": "Cross‑platform and multi‑language experience"
+      },
+      "descripcion": {
+        "es": "Construir una interfaz responsive que funcione en web y mobile reutilizando los mismos componentes, y proporcionar textos en español, inglés y francés.",
+        "en": "Build a responsive interface that works on web and mobile reusing the same components, and provide texts in Spanish, English and French."
+      },
+      "como_lo_resolvi": {
+        "es": "Utilicé Expo Router y React Native Web para crear vistas adaptables y definí un árbol de mensajes centralizado (`messages.ts`) que permite agregar nuevos idiomas fácilmente.",
+        "en": "I used Expo Router and React Native Web to build adaptable views and defined a centralized message tree (`messages.ts`) that makes it easy to add new languages."
+      }
+    },
+    {
+      "titulo": {
+        "es": "Gestión de publicaciones y estado de subasta",
+        "en": "Listing management and auction state"
+      },
+      "descripcion": {
+        "es": "Permitir a los propietarios editar título, descripción o precio base antes de recibir pujas, pausar/activar su publicación y realizar una eliminación lógica (soft delete) sin perder datos.",
+        "en": "Allow owners to edit title, description or base price before receiving bids, pause/activate their listing and perform a logical deletion (soft delete) without losing data."
+      },
+      "como_lo_resolvi": {
+        "es": "Implementé flags de soft delete y un disparador SQL que impide cambiar el precio base cuando existen pujas. Además, la UI expone botones para pausar, activar o eliminar, mostrando confirmaciones y estados.",
+        "en": "I implemented soft‑delete flags and a SQL trigger preventing base price changes when bids exist. In addition, the UI exposes buttons to pause, activate or delete, showing confirmations and statuses."
+      }
+    }
+  ],
+  "decisiones_tecnicas": {
+    "es": [
+      "Uso de Supabase como backend completo (auth, base de datos y storage) para acelerar el desarrollo y aplicar políticas RLS sin servidor.",
+      "Diseño de funciones RPC (`place_bid`, `get_or_create_conversation`) para encapsular lógica crítica en la base de datos.",
+      "Separación entre componente de vista (Expo/React Native Web) y lógica de negocio con TanStack Query para manejo de estado y peticiones.",
+      "Creación de buckets públicos de imágenes con políticas que sólo permiten a los propietarios subir y borrar imágenes.",
+      "Implementación de un sistema de fechas manual para seleccionar año, mes, día y hora final de la subasta, evitando dependencias de calendarios externos."
+    ],
+    "en": [
+      "Use of Supabase as a full backend (auth, database and storage) to accelerate development and apply serverless RLS policies.",
+      "Design of RPC functions (`place_bid`, `get_or_create_conversation`) to encapsulate critical logic in the database.",
+      "Separation between view layer (Expo/React Native Web) and business logic using TanStack Query for state and request management.",
+      "Creation of public image buckets with policies that only allow owners to upload and delete images.",
+      "Implementation of a manual date selector to choose year, month, day and time for the auction end, avoiding external calendar dependencies."
+    ]
+  },
+  "resultado_impacto": {
+    "resultado_general": {
+      "es": "MVP desarrollado e integrado con Supabase para validar la idea de una app social de subastas.",
+      "en": "MVP developed and integrated with Supabase to validate the idea of a social auction app."
+    },
+    "impactos_cualitativos": {
+      "es": [
+        "Demostración de un flujo de subasta end‑to‑end con seguridad y chat integrado",
+        "Base para evolucionar hacia un marketplace completo con métodos de pago y reputación",
+        "Experiencia práctica en políticas RLS y funciones SQL de Supabase"
+      ],
+      "en": [
+        "Demonstration of an end‑to‑end auction flow with security and integrated chat",
+        "Foundation to evolve into a full marketplace with payment methods and reputation",
+        "Practical experience in RLS policies and Supabase SQL functions"
+      ]
+    },
+    "metricas": {
+      "usuarios": null,
+      "grupos_creados": null,
+      "partidos_procesados": null,
+      "otras_metricas": []
+    }
+  },
+  "features_destacadas": {
+    "es": [
+      "Autenticación email/password",
+      "Onboarding con perfil de usuario",
+      "Publicación de artículos con hasta 5 imágenes",
+      "Selección manual de fecha y hora de fin",
+      "Feed con filtros y orden",
+      "Pujas con incremento mínimo del 5 %",
+      "Chat post‑subasta",
+      "Gestión de mis publicaciones y subastas",
+      "Multilenguaje (es, en, fr)",
+      "Políticas RLS de Supabase"
+    ],
+    "en": [
+      "Email/password authentication",
+      "User profile onboarding",
+      "Listing items with up to 5 images",
+      "Manual selection of end date and time",
+      "Feed with filters and sorting",
+      "Bids with a minimum 5 % increment",
+      "Post‑auction chat",
+      "My listings and auctions management",
+      "Multi‑language (es, en, fr)",
+      "Supabase RLS policies"
+    ]
+  },
+  "capturas_galeria": [
+    "/images/projects/rematap-feed.jpg"
+  ],
+  "links": {
+    "demo": "",
+    "repositorio": "https://github.com/kniazev77/Reamatapp",
+    "web": "https://reamatapp.vercel.app/feed",
+    "app_store": "",
+    "play_store": "",
+    "video_demo": ""
+  },
+  "tags": {
+    "es": [
+      "Desarrollo de producto",
+      "Subastas",
+      "Marketplace",
+      "React Native",
+      "Supabase",
+      "PostgreSQL",
+      "TypeScript",
+      "TanStack Query"
+    ],
+    "en": [
+      "Product development",
+      "Auctions",
+      "Marketplace",
+      "React Native",
+      "Supabase",
+      "PostgreSQL",
+      "TypeScript",
+      "TanStack Query"
+    ]
+  },
+  "idiomas_disponibles": [
+    "es",
+    "en",
+    "fr"
+  ],
+  "fecha_inicio": "2026-03-01",
+  "fecha_fin": "2026-03-20",
+  "destacado": false,
+  "orden": 2
+}
