@@ -9,7 +9,7 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/admin" element={<AdminProjectPage />} />
+        <Route path="/admin/*" element={<AdminProjectPage />} />
         <Route path="/project/:projectId" element={<ProjectDetailPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
