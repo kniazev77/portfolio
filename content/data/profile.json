@@ -1,0 +1,65 @@
+{
+  "name": "Juan Francisco Kniazev",
+  "shortName": "Juan Kniazev",
+  "headline": {
+    "es": "Technical Project Manager & Software Engineer",
+    "en": "Technical Project Manager & Software Engineer",
+    "fr": "Chef de projet technique & ingénieur logiciel"
+  },
+  "positioning": {
+    "es": "Conecto necesidades de negocio, software y datos para llevar iniciativas ERP e integraciones desde el análisis hasta producción.",
+    "en": "I connect business needs, software and data to take ERP initiatives and integrations from discovery to production.",
+    "fr": "Je relie les besoins métier, le logiciel et la data pour mener des projets ERP et d’intégration du cadrage à la production."
+  },
+  "summary": {
+    "es": "Perfil técnico híbrido con experiencia en delivery de ERP retail, desarrollo .NET, integraciones REST/SOAP, automatización con Python y análisis de datos.",
+    "en": "Hybrid technical profile with experience in retail ERP delivery, .NET development, REST/SOAP integrations, Python automation and data analysis.",
+    "fr": "Profil technique hybride avec expérience en delivery ERP retail, développement .NET, intégrations REST/SOAP, automatisation Python et analyse de données."
+  },
+  "location": {
+    "city": "Toulouse",
+    "country": "France",
+    "display": {
+      "es": "Toulouse, Francia · disponible para reubicación",
+      "en": "Toulouse, France · open to relocation",
+      "fr": "Toulouse, France · mobilité possible"
+    }
+  },
+  "availability": {
+    "es": "Disponible para oportunidades full-time",
+    "en": "Available for full-time opportunities",
+    "fr": "Disponible pour des opportunités à temps plein"
+  },
+  "workAuthorization": {
+    "expires": "2026-08-26",
+    "text": {
+      "es": "Autorizado a trabajar en Francia con Visa Vacances-Travail hasta el 26 de agosto de 2026.",
+      "en": "Authorized to work in France under a Working Holiday Visa until 26 August 2026.",
+      "fr": "Autorisé à travailler en France avec un Visa Vacances-Travail jusqu’au 26 août 2026."
+    }
+  },
+  "email": "juankniazev1996@gmail.com",
+  "phone": "+33 6 02 73 47 97",
+  "linkedin": "https://www.linkedin.com/in/juan-kniazev/",
+  "github": "https://github.com/kniazev77",
+  "languages": [
+    { "code": "es", "name": { "es": "Español", "en": "Spanish", "fr": "Espagnol" }, "level": { "es": "Nativo", "en": "Native", "fr": "Langue maternelle" } },
+    { "code": "en", "name": { "es": "Inglés", "en": "English", "fr": "Anglais" }, "level": { "es": "C1", "en": "C1", "fr": "C1" } },
+    { "code": "fr", "name": { "es": "Francés", "en": "French", "fr": "Français" }, "level": { "es": "A2 · en formación", "en": "A2 · currently studying", "fr": "A2 · en formation" } }
+  ],
+  "proofPoints": [
+    {
+      "value": "ERP",
+      "label": { "es": "Delivery retail end-to-end", "en": "End-to-end retail delivery", "fr": "Delivery retail de bout en bout" }
+    },
+    {
+      "value": ".NET",
+      "label": { "es": "C#, WPF, SQL Server e IIS", "en": "C#, WPF, SQL Server and IIS", "fr": "C#, WPF, SQL Server et IIS" }
+    },
+    {
+      "value": "Data",
+      "label": { "es": "Python, BigQuery y automatización", "en": "Python, BigQuery and automation", "fr": "Python, BigQuery et automatisation" }
+    }
+  ],
+  "lastReviewed": "2026-06-18"
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "real2b-project-manager",
+    "company": "Real2b",
+    "industry": { "es": "ERP retail", "en": "Retail ERP", "fr": "ERP retail" },
+    "role": {
+      "es": "IT Project Manager · Desarrollo .NET e integraciones",
+      "en": "IT Project Manager · .NET Development & Integrations",
+      "fr": "Chef de projet IT · Développement .NET & intégrations"
+    },
+    "start": "2025-01",
+    "end": null,
+    "location": "Uruguay · Remote from France",
+    "summary": {
+      "es": "Coordino iniciativas ERP e integraciones y mantengo participación técnica en delivery, soporte y estabilización productiva.",
+      "en": "I coordinate ERP initiatives and integrations while remaining hands-on in delivery, support and production stabilization.",
+      "fr": "Je coordonne des initiatives ERP et des intégrations tout en restant impliqué dans le delivery, le support et la stabilisation en production."
+    },
+    "highlights": {
+      "es": [
+        "Recopilación y clarificación de requerimientos, planificación, priorización y comunicación con stakeholders.",
+        "Integraciones con sistemas externos mediante REST y SOAP, validación de flujos y gestión de incidencias.",
+        "Desarrollo y soporte con C#, .NET Framework, SQL Server, Entity Framework, WPF/DevExpress e IIS."
+      ],
+      "en": [
+        "Requirements discovery and clarification, planning, prioritization and stakeholder communication.",
+        "Third-party integrations through REST and SOAP, flow validation and incident management.",
+        "Development and support using C#, .NET Framework, SQL Server, Entity Framework, WPF/DevExpress and IIS."
+      ],
+      "fr": [
+        "Recueil et clarification des besoins, planification, priorisation et communication avec les parties prenantes.",
+        "Intégrations tierces via REST et SOAP, validation des flux et gestion des incidents.",
+        "Développement et support avec C#, .NET Framework, SQL Server, Entity Framework, WPF/DevExpress et IIS."
+      ]
+    },
+    "tags": ["ERP", "Delivery", "REST", "SOAP", "C#", "SQL Server", "IIS"]
+  },
+  {
+    "id": "real2b-developer",
+    "company": "Real2b",
+    "industry": { "es": "ERP retail", "en": "Retail ERP", "fr": "ERP retail" },
+    "role": {
+      "es": "Desarrollador Full-Stack .NET",
+      "en": "Full-Stack .NET Developer",
+      "fr": "Développeur Full-Stack .NET"
+    },
+    "start": "2024-08",
+    "end": "2025-01",
+    "location": "Uruguay",
+    "summary": {
+      "es": "Desarrollé y mantuve módulos de una aplicación de negocio en producción.",
+      "en": "I developed and maintained modules for a production business application.",
+      "fr": "J’ai développé et maintenu des modules d’une application métier en production."
+    },
+    "highlights": {
+      "es": [
+        "Diseño e implementación de interfaces WPF con DevExpress.",
+        "Acceso a datos con Entity Framework y SQL Server.",
+        "Mantenimiento de APIs y resolución de defectos productivos."
+      ],
+      "en": [
+        "Designed and implemented WPF interfaces with DevExpress.",
+        "Built data access with Entity Framework and SQL Server.",
+        "Maintained APIs and resolved production defects."
+      ],
+      "fr": [
+        "Conception et développement d’interfaces WPF avec DevExpress.",
+        "Accès aux données avec Entity Framework et SQL Server.",
+        "Maintenance d’APIs et résolution d’incidents en production."
+      ]
+    },
+    "tags": ["C#", ".NET", "WPF", "DevExpress", "Entity Framework"]
+  },
+  {
+    "id": "pedidosya-data",
+    "company": "PedidosYa",
+    "industry": { "es": "Delivery y e-commerce", "en": "Delivery and e-commerce", "fr": "Livraison et e-commerce" },
+    "role": {
+      "es": "Catalog Governance Senior Analyst",
+      "en": "Catalog Governance Senior Analyst",
+      "fr": "Senior Analyst · Gouvernance catalogue"
+    },
+    "start": "2022-06",
+    "end": "2024-08",
+    "location": "LATAM",
+    "summary": {
+      "es": "Trabajé en gobernanza, calidad de datos, automatización operativa y reporting para equipos regionales.",
+      "en": "I worked on governance, data quality, operational automation and reporting for regional teams.",
+      "fr": "J’ai travaillé sur la gouvernance, la qualité des données, l’automatisation opérationnelle et le reporting pour des équipes régionales."
+    },
+    "highlights": {
+      "es": [
+        "Automatizaciones Python para reducir tareas manuales y validar reglas operativas.",
+        "Extracción y análisis con BigQuery; reporting en Looker Studio y hojas de cálculo.",
+        "Coordinación transversal mediante Jira, Trello, Slack y herramientas Google."
+      ],
+      "en": [
+        "Python automations to reduce manual work and validate operational rules.",
+        "Extraction and analysis with BigQuery; reporting in Looker Studio and spreadsheets.",
+        "Cross-functional coordination through Jira, Trello, Slack and Google tools."
+      ],
+      "fr": [
+        "Automatisations Python pour réduire les tâches manuelles et valider les règles opérationnelles.",
+        "Extraction et analyse avec BigQuery ; reporting dans Looker Studio et les tableurs.",
+        "Coordination transverse via Jira, Trello, Slack et les outils Google."
+      ]
+    },
+    "tags": ["Python", "BigQuery", "Data quality", "Looker Studio", "Automation"]
+  }
+]
