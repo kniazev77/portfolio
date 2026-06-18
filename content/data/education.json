@@ -1,0 +1,61 @@
+{
+  "education": [
+    {
+      "institution": "Universidad de la Empresa (UDE)",
+      "location": "Montevideo, Uruguay",
+      "start": "2023-03",
+      "end": "2025-12",
+      "title": {
+        "es": "Analista en Tecnologías de la Información · Técnico en Informática",
+        "en": "Information Technology Analyst · Computer Technician",
+        "fr": "Analyste en technologies de l’information · Technicien informatique"
+      },
+      "status": {
+        "es": "Formación finalizada; título en trámite",
+        "en": "Program completed; diploma being issued",
+        "fr": "Formation terminée ; diplôme en cours de délivrance"
+      },
+      "url": "https://ude.edu.uy/facultad-de-ingenieria/tecnico-en-informatica/"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Scrum Master",
+      "issuer": "LearnQuest · Coursera",
+      "status": "completed",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/AMSMAM25A9NF"
+    },
+    {
+      "name": "Foundations of Project Management",
+      "issuer": "Google · Coursera",
+      "status": "completed",
+      "url": "https://www.coursera.org/account/accomplishments/verify/QV7GCGJQHJSV"
+    },
+    {
+      "name": "Project Planning: Putting It All Together",
+      "issuer": "Google · Coursera",
+      "status": "completed",
+      "url": "https://www.coursera.org/account/accomplishments/verify/IHFO6F6GF7ZA"
+    },
+    {
+      "name": "n8n: No-code automation & AI agents",
+      "issuer": "Udemy",
+      "status": "completed",
+      "url": "https://www.udemy.com/certificate/UC-e1cef5fa-151b-4423-a009-9a52cce7f41e/"
+    }
+  ],
+  "achievement": {
+    "date": "2017-09",
+    "title": {
+      "es": "Ganador · Hackathon Agro, segunda edición",
+      "en": "Winner · Hackathon Agro, second edition",
+      "fr": "Lauréat · Hackathon Agro, deuxième édition"
+    },
+    "description": {
+      "es": "Solución con sensores y análisis predictivo para prevenir pérdidas por enfermedades foliares en cebada.",
+      "en": "Sensor and predictive analytics solution to reduce losses caused by barley leaf disease.",
+      "fr": "Solution combinant capteurs et analyse prédictive pour réduire les pertes liées aux maladies foliaires de l’orge."
+    },
+    "url": "https://www.gov.uk/government/news/successful-second-hackathon-agro-in-montevideo.es-419"
+  }
+}

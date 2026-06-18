@@ -1,94 +1,92 @@
-# Portfolio React
+# Juan Kniazev · Professional portfolio
 
-Sitio web estatico personal para presentar proyectos en formato portfolio.
+Multilingual professional portfolio designed for recruiters and employers. The public site prioritizes verified experience, selected case studies and three shareable professional focuses:
 
-## Lo que ya incluye
+- Delivery / ERP
+- Software / .NET
+- Data / Automation
 
-- React + Vite
-- Home con dos secciones:
-  - Presentacion personal, redes y experiencia
-  - Grilla de proyectos en cards
-- Vista detalle por proyecto con:
-  - Carrusel horizontal de imagenes
-  - Seccion de texto descriptiva
-  - Tecnologias y enlaces
-- Selector de idioma ES/EN
-- Estilo minimalista claro y responsive
-- Workflow de deploy para GitHub Pages
-- Panel admin privado para crear/editar proyectos y guardar en GitHub
+## Stack
 
-## Scripts
+- Next.js and TypeScript
+- Versioned JSON content validated with Zod
+- React PDF for ATS-friendly CV generation
+- GitHub OAuth and Git Data API for the private editorial CMS
+- Vercel production and pull-request previews
+- GitHub Pages redirect to the production URL
 
-- npm run dev
-- npm run build
-- npm run preview
+## Local setup
 
-## Estructura principal
+```bash
+npm install
+cp .env.example .env.local
+npm run dev
+```
 
-- src/data/projects.js: datos de cards y detalle por proyecto
-- src/pages/AdminProjectPage.jsx: formulario admin privado
-- src/services/githubAdminApi.js: GitHub OAuth + escritura al repo
-- src/data/profile.js: presentacion, experiencia y redes
-- src/pages/HomePage.jsx: pantalla principal
-- src/pages/ProjectDetailPage.jsx: pantalla de detalle
-- src/components/ProjectCarousel.jsx: carrusel horizontal
-- public/images/projects: imagenes de cada proyecto
-- content/projects: fuente de verdad de proyectos (.json por proyecto)
-- .github/workflows/deploy.yml: pipeline de GitHub Pages
+Public routes:
 
-## Personalizacion rapida
+- `/es`
+- `/en`
+- `/fr`
+- `/{language}?focus=delivery|software|data`
 
-1. Editar tu presentacion y redes en src/data/profile.js
-2. Ir a /#/admin para crear o actualizar proyectos
-3. Cargar assets en public/images/projects y public/videos
-4. Publicar desde el formulario para generar commit automatico
+Private CMS:
 
-## Admin privado de proyectos
+- `/admin`
 
-Ruta:
-- /#/admin
+## Canonical content
 
-La autenticacion valida que:
-- el usuario de GitHub sea el definido en VITE_GITHUB_ALLOWED_USER
-- la cuenta tenga permisos write sobre el repositorio
+All public facts live in `content/data`. Updating these files updates the site and the three generated CVs.
 
-Configura .env.local basado en .env.example:
+```text
+profile.json
+experience.json
+education.json
+projects.json
+cvVariants.json
+```
 
-- VITE_GITHUB_OWNER
-- VITE_GITHUB_REPO
-- VITE_GITHUB_BRANCH
-- VITE_GITHUB_ALLOWED_USER
-- VITE_GITHUB_OAUTH_CLIENT_ID
-- VITE_GITHUB_PROJECTS_PATH
+Run:
 
-Notas:
-- En GitHub Pages, usa token personal (PAT) para iniciar sesion desde /#/admin.
-- OAuth Device Flow desde frontend puede fallar por CORS en los endpoints de github.com/login/oauth/*.
-- Si usas PAT Fine-grained, asigna permisos del repositorio: Contents (Read and write).
-- El panel crea/actualiza content/projects/{slug}.json y eso dispara el deploy de Pages.
-- El formulario solo se habilita despues del login con GitHub y validacion de permisos write.
+```bash
+npm run validate:content
+npm run generate:cvs
+```
 
-Produccion (GitHub Pages):
-- Define estas variables en GitHub (Settings > Secrets and variables > Actions):
-  - VITE_GITHUB_OWNER
-  - VITE_GITHUB_REPO
-  - VITE_GITHUB_BRANCH
-  - VITE_GITHUB_ALLOWED_USER
-  - VITE_GITHUB_OAUTH_CLIENT_ID
-  - VITE_GITHUB_PROJECTS_PATH
-- El workflow de deploy inyecta esas variables al build para que /#/admin funcione online.
+Generated files:
 
-## GitHub Pages
+- `public/cv/Juan-Kniazev-CV-Project-Management-ERP.pdf`
+- `public/cv/Juan-Kniazev-CV-DotNet-Integrations.pdf`
+- `public/cv/Juan-Kniazev-CV-Data-Automation.pdf`
 
-Este repo ya trae workflow de Pages.
+## GitHub OAuth CMS
 
-1. Push a la rama main
-2. En GitHub, ir a Settings > Pages
-3. En Build and deployment, seleccionar GitHub Actions
-4. Esperar el workflow Deploy to GitHub Pages
+Create a GitHub OAuth App with:
 
-Cuando publicas un proyecto desde /#/admin, se crea un commit en main y este workflow se ejecuta automaticamente.
+- Homepage URL: your Vercel production URL
+- Callback URL: `https://your-domain/api/auth/github/callback`
 
-## Nota sobre rutas
+Configure Vercel environment variables using `.env.example`.
 
-Se usa HashRouter para evitar problemas de 404 en rutas internas al refrescar en GitHub Pages.
+The CMS:
+
+1. Authenticates the configured GitHub user.
+2. Stores the GitHub token inside an encrypted HttpOnly cookie.
+3. Saves browser drafts to local storage.
+4. Validates canonical content server-side.
+5. Creates or updates `content/update-YYYY-MM-DD`.
+6. Creates a pull request so Vercel can provide a preview.
+
+No personal access token is entered in the browser.
+
+## Deployment
+
+Import the repository into Vercel using the Hobby plan. Set `PORTFOLIO_PRODUCTION_URL` as a GitHub Actions repository variable so the existing GitHub Page redirects to the final Vercel URL.
+
+## Quality gates
+
+```bash
+npm run check
+```
+
+CI validates content and assets, runs lint and tests, generates all CVs, builds Next.js and audits production dependencies.

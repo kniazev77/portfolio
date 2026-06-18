@@ -1,0 +1,49 @@
+name: GitHub Pages redirect
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  redirect:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create redirect page
+        env:
+          TARGET: ${{ vars.PORTFOLIO_PRODUCTION_URL || 'https://kniazev77.vercel.app' }}
+        run: |
+          mkdir site
+          cat > site/index.html <<EOF
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width,initial-scale=1">
+              <meta http-equiv="refresh" content="0;url=$TARGET">
+              <link rel="canonical" href="$TARGET">
+              <title>Juan Kniazev · Portfolio</title>
+            </head>
+            <body>
+              <p>Portfolio moved to <a href="$TARGET">$TARGET</a>.</p>
+            </body>
+          </html>
+          EOF
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy redirect
+        id: deployment
+        uses: actions/deploy-pages@v4

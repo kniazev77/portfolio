@@ -1,0 +1,23 @@
+[
+  {
+    "id": "delivery",
+    "label": { "es": "Project Management / ERP", "en": "Project Management / ERP", "fr": "Gestion de projet / ERP" },
+    "file": "/cv/Juan-Kniazev-CV-Project-Management-ERP.pdf",
+    "prioritySkills": ["ERP delivery", "AMOA", "Stakeholder management", "REST/SOAP", "Agile/Scrum", "SQL Server"],
+    "projectIds": ["erp-integration", "ip43-nba", "data-automation"]
+  },
+  {
+    "id": "software",
+    "label": { "es": ".NET & Integraciones", "en": ".NET & Integrations", "fr": ".NET & Intégrations" },
+    "file": "/cv/Juan-Kniazev-CV-DotNet-Integrations.pdf",
+    "prioritySkills": ["C#", ".NET Framework", "WPF", "SQL Server", "REST/SOAP", "IIS"],
+    "projectIds": ["erp-integration", "image-handler", "walletbot", "ip43-nba"]
+  },
+  {
+    "id": "data",
+    "label": { "es": "Data & Automatización", "en": "Data & Automation", "fr": "Data & Automatisation" },
+    "file": "/cv/Juan-Kniazev-CV-Data-Automation.pdf",
+    "prioritySkills": ["Python", "BigQuery", "SQL", "Data quality", "Automation", "Looker Studio"],
+    "projectIds": ["data-automation", "walletbot", "image-handler", "ip43-nba"]
+  }
+]

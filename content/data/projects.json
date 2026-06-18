@@ -1,0 +1,197 @@
+[
+  {
+    "id": "erp-integration",
+    "slug": "erp-integration",
+    "featured": true,
+    "focus": ["delivery", "software"],
+    "status": { "es": "Caso profesional anonimizado", "en": "Anonymized professional case", "fr": "Cas professionnel anonymisé" },
+    "title": { "es": "Delivery e integración para ERP retail", "en": "Retail ERP delivery and integration", "fr": "Delivery et intégration pour un ERP retail" },
+    "short": {
+      "es": "De la necesidad operativa a una integración estable en producción.",
+      "en": "From an operational need to a stable production integration.",
+      "fr": "Du besoin opérationnel à une intégration stable en production."
+    },
+    "problem": {
+      "es": "Un cliente necesitaba conectar procesos de su ecosistema con un ERP existente sin comprometer la continuidad operativa.",
+      "en": "A client needed to connect processes from its ecosystem to an existing ERP without compromising operational continuity.",
+      "fr": "Un client devait connecter les processus de son écosystème à un ERP existant sans compromettre la continuité opérationnelle."
+    },
+    "contribution": {
+      "es": "Clarifiqué requerimientos, estructuré el delivery, coordiné validaciones y contribuí en la implementación y troubleshooting de servicios REST/SOAP y SQL Server.",
+      "en": "I clarified requirements, structured delivery, coordinated validation and contributed to the implementation and troubleshooting of REST/SOAP services and SQL Server.",
+      "fr": "J’ai clarifié les besoins, structuré le delivery, coordonné la validation et contribué à l’implémentation et au troubleshooting de services REST/SOAP et SQL Server."
+    },
+    "outcome": {
+      "es": "Integración desplegada con documentación, validación de flujos y soporte de estabilización.",
+      "en": "Integration deployed with documentation, flow validation and stabilization support.",
+      "fr": "Intégration déployée avec documentation, validation des flux et support de stabilisation."
+    },
+    "stack": ["C#", ".NET Framework", "REST", "SOAP", "SQL Server", "IIS"],
+    "media": [],
+    "links": []
+  },
+  {
+    "id": "ip43-nba",
+    "slug": "ip43-nba",
+    "featured": true,
+    "focus": ["software", "data", "delivery"],
+    "status": { "es": "En producción", "en": "In production", "fr": "En production" },
+    "title": { "es": "IP43 NBA", "en": "IP43 NBA", "fr": "IP43 NBA" },
+    "short": {
+      "es": "Producto cross-platform de predicciones, grupos y rankings NBA.",
+      "en": "Cross-platform NBA predictions, groups and rankings product.",
+      "fr": "Produit cross-platform de pronostics, groupes et classements NBA."
+    },
+    "problem": {
+      "es": "Las competencias informales de predicciones carecen de una experiencia propia, reglas automáticas y rankings por comunidad.",
+      "en": "Informal prediction competitions lack an owned experience, automated rules and community rankings.",
+      "fr": "Les concours de pronostics informels manquent d’une expérience dédiée, de règles automatiques et de classements communautaires."
+    },
+    "contribution": {
+      "es": "Definí el producto y desarrollé frontend, modelo de datos, autenticación, funciones backend, integración NBA y despliegue.",
+      "en": "I defined the product and built the frontend, data model, authentication, backend functions, NBA integration and deployment.",
+      "fr": "J’ai défini le produit et développé le frontend, le modèle de données, l’authentification, les fonctions backend, l’intégration NBA et le déploiement."
+    },
+    "outcome": {
+      "es": "Aplicación web desplegada con OAuth, grupos privados, predicciones y leaderboards.",
+      "en": "Deployed web application with OAuth, private groups, predictions and leaderboards.",
+      "fr": "Application web déployée avec OAuth, groupes privés, pronostics et classements."
+    },
+    "stack": ["React Native", "Expo", "TypeScript", "Supabase", "PostgreSQL", "Vercel"],
+    "media": [
+      "/images/projects/ip43nba-games.jpg",
+      "/images/projects/ip43nba-groups.jpg",
+      "/images/projects/ip43nba-rankingglobal.jpg"
+    ],
+    "links": [
+      { "label": "Web", "url": "https://ip43-nba.vercel.app/login" }
+    ]
+  },
+  {
+    "id": "walletbot",
+    "slug": "walletbot",
+    "featured": true,
+    "focus": ["software", "data"],
+    "status": { "es": "Servicio en producción", "en": "Production service", "fr": "Service en production" },
+    "title": { "es": "WalletBot", "en": "WalletBot", "fr": "WalletBot" },
+    "short": {
+      "es": "Finanzas personales mediante Telegram y una API Python.",
+      "en": "Personal finance through Telegram and a Python API.",
+      "fr": "Finances personnelles via Telegram et une API Python."
+    },
+    "problem": {
+      "es": "Registrar gastos compartidos suele requerir abrir aplicaciones, completar formularios y reconciliar datos manualmente.",
+      "en": "Tracking shared expenses often requires opening apps, filling forms and reconciling data manually.",
+      "fr": "Le suivi des dépenses partagées demande souvent d’ouvrir des applications, de remplir des formulaires et de rapprocher les données manuellement."
+    },
+    "contribution": {
+      "es": "Diseñé la API, reglas de negocio e integración con Telegram; dockericé y desplegué el servicio en un VPS.",
+      "en": "I designed the API, business rules and Telegram integration; containerized and deployed the service to a VPS.",
+      "fr": "J’ai conçu l’API, les règles métier et l’intégration Telegram ; conteneurisé et déployé le service sur un VPS."
+    },
+    "outcome": {
+      "es": "Flujo operativo por chat con mantenimiento, logs y mejoras incrementales.",
+      "en": "Chat-based operational flow with maintenance, logs and incremental improvements.",
+      "fr": "Flux opérationnel par chat avec maintenance, logs et améliorations progressives."
+    },
+    "stack": ["Python", "FastAPI", "Telegram Bot API", "Docker", "Hetzner"],
+    "media": [],
+    "links": []
+  },
+  {
+    "id": "data-automation",
+    "slug": "data-automation",
+    "featured": true,
+    "focus": ["data", "delivery"],
+    "status": { "es": "Caso profesional anonimizado", "en": "Anonymized professional case", "fr": "Cas professionnel anonymisé" },
+    "title": { "es": "Automatización de operaciones de datos", "en": "Data operations automation", "fr": "Automatisation des opérations data" },
+    "short": {
+      "es": "Python y BigQuery para validar datos, reducir trabajo manual y acelerar decisiones.",
+      "en": "Python and BigQuery to validate data, reduce manual work and accelerate decisions.",
+      "fr": "Python et BigQuery pour valider les données, réduire le travail manuel et accélérer les décisions."
+    },
+    "problem": {
+      "es": "Procesos regionales dependían de controles repetitivos, archivos y seguimiento manual de reglas operativas.",
+      "en": "Regional processes depended on repetitive checks, files and manual tracking of operational rules.",
+      "fr": "Les processus régionaux dépendaient de contrôles répétitifs, de fichiers et d’un suivi manuel des règles opérationnelles."
+    },
+    "contribution": {
+      "es": "Construí automatizaciones Python, consultas BigQuery, reglas de validación y reporting para stakeholders.",
+      "en": "I built Python automations, BigQuery queries, validation rules and stakeholder reporting.",
+      "fr": "J’ai développé des automatisations Python, des requêtes BigQuery, des règles de validation et du reporting pour les parties prenantes."
+    },
+    "outcome": {
+      "es": "Procesos más consistentes y una base reutilizable para controles y análisis operativos.",
+      "en": "More consistent processes and a reusable foundation for operational checks and analysis.",
+      "fr": "Des processus plus cohérents et une base réutilisable pour les contrôles et analyses opérationnels."
+    },
+    "stack": ["Python", "BigQuery", "Looker Studio", "Google Sheets", "Jira"],
+    "media": [],
+    "links": []
+  },
+  {
+    "id": "image-handler",
+    "slug": "image-handler",
+    "featured": false,
+    "focus": ["software", "data"],
+    "status": { "es": "Herramienta de automatización", "en": "Automation tool", "fr": "Outil d’automatisation" },
+    "title": { "es": "ImageHandler", "en": "ImageHandler", "fr": "ImageHandler" },
+    "short": {
+      "es": "Pipeline de imágenes de producto hacia SQL Server.",
+      "en": "Product image pipeline into SQL Server.",
+      "fr": "Pipeline d’images produit vers SQL Server."
+    },
+    "problem": {
+      "es": "Las imágenes de productos debían descargarse desde múltiples fuentes y cargarse de forma consistente al ERP.",
+      "en": "Product images needed to be downloaded from multiple sources and loaded consistently into the ERP.",
+      "fr": "Les images produit devaient être téléchargées depuis plusieurs sources et chargées de manière cohérente dans l’ERP."
+    },
+    "contribution": {
+      "es": "Implementé lectura CSV, descarga HTTP/SFTP, generación de miniaturas e inserción en SQL Server.",
+      "en": "I implemented CSV reading, HTTP/SFTP download, thumbnail generation and SQL Server insertion.",
+      "fr": "J’ai mis en œuvre la lecture CSV, le téléchargement HTTP/SFTP, la génération de miniatures et l’insertion dans SQL Server."
+    },
+    "outcome": {
+      "es": "Proceso repetible para incorporar imágenes y miniaturas en la base del ERP.",
+      "en": "Repeatable process to add images and thumbnails to the ERP database.",
+      "fr": "Processus reproductible pour intégrer les images et miniatures dans la base ERP."
+    },
+    "stack": ["Python", "HTTP", "SFTP", "CSV", "SQL Server"],
+    "media": [],
+    "links": []
+  },
+  {
+    "id": "rematap",
+    "slug": "rematap",
+    "featured": false,
+    "focus": ["software", "delivery"],
+    "status": { "es": "MVP en desarrollo", "en": "MVP in development", "fr": "MVP en développement" },
+    "title": { "es": "Rematap", "en": "Rematap", "fr": "Rematap" },
+    "short": {
+      "es": "Marketplace social con subastas, pujas atómicas y chat.",
+      "en": "Social marketplace with auctions, atomic bidding and chat.",
+      "fr": "Marketplace social avec enchères, offres atomiques et chat."
+    },
+    "problem": {
+      "es": "Las subastas informales en redes sociales no integran reglas claras, seguridad de acceso y comunicación post-subasta.",
+      "en": "Informal social auctions do not integrate clear rules, access security and post-auction communication.",
+      "fr": "Les enchères informelles sur les réseaux sociaux n’intègrent pas de règles claires, de sécurité d’accès ni de communication après l’enchère."
+    },
+    "contribution": {
+      "es": "Definí el MVP, modelo de datos, políticas RLS y funciones SQL para pujas consistentes.",
+      "en": "I defined the MVP, data model, RLS policies and SQL functions for consistent bidding.",
+      "fr": "J’ai défini le MVP, le modèle de données, les politiques RLS et les fonctions SQL pour des enchères cohérentes."
+    },
+    "outcome": {
+      "es": "Base funcional para validar publicación, subasta, gestión y chat entre participantes.",
+      "en": "Functional foundation to validate listing, auction, management and participant chat.",
+      "fr": "Base fonctionnelle pour valider la publication, l’enchère, la gestion et le chat entre participants."
+    },
+    "stack": ["React Native", "Expo", "TypeScript", "Supabase", "PostgreSQL", "RLS"],
+    "media": [],
+    "links": [
+      { "label": "Repository", "url": "https://github.com/kniazev77/Reamatapp" },
+      { "label": "Web", "url": "https://reamatapp.vercel.app/feed" }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+name: Portfolio quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:content
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.PORTFOLIO_PRODUCTION_URL || 'https://kniazev77.vercel.app' }}
+      - run: npm audit --omit=dev --audit-level=high
+      - uses: actions/upload-artifact@v4
+        with:
+          name: generated-cvs
+          path: public/cv/*.pdf
