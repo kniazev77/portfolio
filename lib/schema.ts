@@ -1,4 +1,4 @@
-import { z } from 'zod'
+﻿import { z } from 'zod'
 
 export const locales = ['es', 'en', 'fr'] as const
 export const focusIds = ['delivery', 'software', 'data'] as const
@@ -14,6 +14,11 @@ export const localizedSchema = z.object({
 
 const urlSchema = z.string().url()
 const monthSchema = z.string().regex(/^\d{4}-\d{2}$/)
+const localizedFileSchema = z.object({
+  es: z.string().startsWith('/cv/').endsWith('.pdf'),
+  en: z.string().startsWith('/cv/').endsWith('.pdf'),
+  fr: z.string().startsWith('/cv/').endsWith('.pdf')
+})
 
 export const profileSchema = z.object({
   name: z.string().min(1),
@@ -34,6 +39,7 @@ export const profileSchema = z.object({
   email: z.email(),
   phone: z.string().min(8),
   linkedin: urlSchema,
+  website: urlSchema,
   github: urlSchema,
   languages: z.array(
     z.object({
@@ -69,11 +75,23 @@ export const educationSchema = z.object({
   education: z.array(
     z.object({
       institution: z.string().min(1),
+      faculty: z.string().min(1),
       location: z.string().min(1),
       start: monthSchema,
       end: monthSchema,
       title: localizedSchema,
       status: localizedSchema,
+      description: localizedSchema,
+      focusAreas: z.object({
+        es: z.array(z.string().min(1)).min(1),
+        en: z.array(z.string().min(1)).min(1),
+        fr: z.array(z.string().min(1)).min(1)
+      }),
+      intermediateCredential: localizedSchema,
+      capstone: z.object({
+        name: z.string().min(1),
+        description: localizedSchema
+      }),
       url: urlSchema
     })
   ),
@@ -82,14 +100,23 @@ export const educationSchema = z.object({
       name: z.string().min(1),
       issuer: z.string().min(1),
       status: z.enum(['completed', 'in-progress']),
-      url: urlSchema
+      date: monthSchema,
+      description: localizedSchema,
+      url: urlSchema,
+      credentialId: z.string().min(1).optional()
     })
   ),
   achievement: z.object({
     date: monthSchema,
     title: localizedSchema,
     description: localizedSchema,
-    url: urlSchema
+    url: urlSchema,
+    references: z.array(
+      z.object({
+        label: z.string().min(1),
+        url: urlSchema
+      })
+    ).min(1)
   })
 })
 
@@ -117,7 +144,8 @@ export const cvVariantsSchema = z.array(
   z.object({
     id: z.enum(focusIds),
     label: localizedSchema,
-    file: z.string().startsWith('/cv/').endsWith('.pdf'),
+    pitch: localizedSchema,
+    files: localizedFileSchema,
     prioritySkills: z.array(z.string().min(1)).min(1),
     projectIds: z.array(z.string().min(1)).min(1)
   })

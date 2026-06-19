@@ -5,6 +5,7 @@ import type { Locale } from '@/lib/schema'
 
 export function ContactFooter({ locale }: { locale: Locale }) {
   const t = labels[locale]
+
   return (
     <>
       <section className="contact-section" id="contact">
@@ -16,6 +17,7 @@ export function ContactFooter({ locale }: { locale: Locale }) {
           <div className="contact-links">
             <a className="button button-primary" href={`mailto:${profile.email}`}>{t.emailMe} <FiMail aria-hidden /></a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href={profile.website} target="_blank" rel="noreferrer">Website ↗</a>
             <a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>

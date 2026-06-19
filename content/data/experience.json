@@ -2,81 +2,114 @@
   {
     "id": "real2b-project-manager",
     "company": "Real2b",
-    "industry": { "es": "ERP retail", "en": "Retail ERP", "fr": "ERP retail" },
+    "industry": {
+      "es": "ERP retail",
+      "en": "Retail ERP",
+      "fr": "ERP retail"
+    },
     "role": {
-      "es": "IT Project Manager · Desarrollo .NET e integraciones",
-      "en": "IT Project Manager · .NET Development & Integrations",
-      "fr": "Chef de projet IT · Développement .NET & intégrations"
+      "es": "IT Project Manager · Consultoria tecnico-funcional e integraciones .NET",
+      "en": "IT Project Manager · Technical and Functional Consulting with .NET Integrations",
+      "fr": "Chef de projet IT · Conseil technico-fonctionnel et integrations .NET"
     },
     "start": "2025-01",
     "end": null,
     "location": "Uruguay · Remote from France",
     "summary": {
-      "es": "Coordino iniciativas ERP e integraciones y mantengo participación técnica en delivery, soporte y estabilización productiva.",
-      "en": "I coordinate ERP initiatives and integrations while remaining hands-on in delivery, support and production stabilization.",
-      "fr": "Je coordonne des initiatives ERP et des intégrations tout en restant impliqué dans le delivery, le support et la stabilisation en production."
+      "es": "Lidero iniciativas de integracion y evolucion de producto para clientes con operacion distribuida, combinando gestion de proyecto, analisis funcional e implementacion tecnica.",
+      "en": "Leading integration and product evolution initiatives for clients with distributed operations, combining project management, functional analysis and direct technical implementation.",
+      "fr": "Pilotage d'initiatives d'integration et d'evolution produit pour des clients aux operations distribuees, en combinant gestion de projet, analyse fonctionnelle et implementation technique."
     },
     "highlights": {
       "es": [
-        "Recopilación y clarificación de requerimientos, planificación, priorización y comunicación con stakeholders.",
-        "Integraciones con sistemas externos mediante REST y SOAP, validación de flujos y gestión de incidencias.",
-        "Desarrollo y soporte con C#, .NET Framework, SQL Server, Entity Framework, WPF/DevExpress e IIS."
+        "Promocion desde desarrollador .NET a liderazgo de equipo, coordinando a 3 desarrolladores (1 senior y 2 junior) y reportando directamente al CEO.",
+        "Lidere una integracion critica entre POS, ecommerce y ERP contable-financiero via REST y SOAP, desde el relevamiento y diseno hasta la implementacion, validacion y coordinacion con terceros.",
+        "Resultado: 99% de exito en la transferencia de datos y 100% de las ventas ecommerce registradas correctamente en los tres sistemas para un cliente con aproximadamente 250 transacciones diarias.",
+        "Disene el ETL y gestione el delivery de un modulo BI adoptado por mas de 50 clientes en Uruguay y Argentina, con despliegue sin errores ni impacto negativo en performance.",
+        "Disene una solucion cloud para sincronizacion de stock individual y packs con Mercado Libre, operativa desde enero de 2025 sin bugs reportados y reusable para la base de clientes."
       ],
       "en": [
-        "Requirements discovery and clarification, planning, prioritization and stakeholder communication.",
-        "Third-party integrations through REST and SOAP, flow validation and incident management.",
-        "Development and support using C#, .NET Framework, SQL Server, Entity Framework, WPF/DevExpress and IIS."
+        "Promoted from .NET developer into team leadership, coordinating 3 developers (1 senior and 2 junior) while reporting directly to the CEO.",
+        "Led a critical integration across POS, ecommerce and financial ERP systems through REST and SOAP, covering discovery, solution design, implementation, validation and third-party coordination.",
+        "Result: 99% successful data transfer and 100% of ecommerce sales correctly registered across all three systems for a client handling roughly 250 daily transactions.",
+        "Designed the ETL and managed the delivery of a BI module adopted by 50+ clients in Uruguay and Argentina, with an error-free rollout and no negative performance impact.",
+        "Designed a cloud solution to synchronize unit and bundle inventory with Mercado Libre, running in production since January 2025 with no reported bugs and reusable across the client base."
       ],
       "fr": [
-        "Recueil et clarification des besoins, planification, priorisation et communication avec les parties prenantes.",
-        "Intégrations tierces via REST et SOAP, validation des flux et gestion des incidents.",
-        "Développement et support avec C#, .NET Framework, SQL Server, Entity Framework, WPF/DevExpress et IIS."
+        "Promotion du role de developpeur .NET vers le pilotage d'equipe, avec la coordination de 3 developpeurs (1 senior et 2 juniors) et un reporting direct au CEO.",
+        "J'ai pilote une integration critique entre POS, ecommerce et ERP comptable-financier via REST et SOAP, du cadrage et de la conception jusqu'a l'implementation, la validation et la coordination avec des tiers.",
+        "Resultat : 99 % de succes dans le transfert des donnees et 100 % des ventes ecommerce correctement enregistrees dans les trois systemes pour un client traitant environ 250 transactions par jour.",
+        "J'ai concu l'ETL et pilote la livraison d'un module BI adopte par plus de 50 clients en Uruguay et en Argentine, avec un deploiement sans erreur et sans impact negatif sur la performance.",
+        "J'ai concu une solution cloud de synchronisation du stock unitaire et en packs avec Mercado Libre, en production depuis janvier 2025 sans bug signale et reusable pour la base clients."
       ]
     },
-    "tags": ["ERP", "Delivery", "REST", "SOAP", "C#", "SQL Server", "IIS"]
+    "tags": [
+      "Project management",
+      "Functional consulting",
+      "ERP",
+      "REST",
+      "SOAP",
+      "C#",
+      "SQL Server"
+    ]
   },
   {
     "id": "real2b-developer",
     "company": "Real2b",
-    "industry": { "es": "ERP retail", "en": "Retail ERP", "fr": "ERP retail" },
+    "industry": {
+      "es": "ERP retail",
+      "en": "Retail ERP",
+      "fr": "ERP retail"
+    },
     "role": {
       "es": "Desarrollador Full-Stack .NET",
       "en": "Full-Stack .NET Developer",
-      "fr": "Développeur Full-Stack .NET"
+      "fr": "Developpeur Full-Stack .NET"
     },
     "start": "2024-08",
     "end": "2025-01",
     "location": "Uruguay",
     "summary": {
-      "es": "Desarrollé y mantuve módulos de una aplicación de negocio en producción.",
-      "en": "I developed and maintained modules for a production business application.",
-      "fr": "J’ai développé et maintenu des modules d’une application métier en production."
+      "es": "Desarrollo y mantenimiento de modulos de negocio en produccion, con foco en UI, datos, APIs y resolucion de incidencias.",
+      "en": "Development and maintenance of production business modules, with a focus on UI, data, APIs and incident resolution.",
+      "fr": "Developpement et maintenance de modules metier en production, avec un focus sur l'UI, la data, les APIs et la resolution d'incidents."
     },
     "highlights": {
       "es": [
-        "Diseño e implementación de interfaces WPF con DevExpress.",
-        "Acceso a datos con Entity Framework y SQL Server.",
-        "Mantenimiento de APIs y resolución de defectos productivos."
+        "Implemente y depure interfaces WPF con DevExpress para flujos operativos de negocio.",
+        "Trabaje con Entity Framework y SQL Server en mantenimiento evolutivo y correctivo.",
+        "Resolvi incidencias productivas y sostuve APIs y servicios que luego me llevaron a asumir responsabilidades de gestion e integracion."
       ],
       "en": [
-        "Designed and implemented WPF interfaces with DevExpress.",
-        "Built data access with Entity Framework and SQL Server.",
-        "Maintained APIs and resolved production defects."
+        "Implemented and debugged WPF interfaces with DevExpress for operational business flows.",
+        "Worked with Entity Framework and SQL Server on both corrective and evolutionary maintenance.",
+        "Resolved production issues and maintained APIs and services, building the technical base that later supported my move into project and integration leadership."
       ],
       "fr": [
-        "Conception et développement d’interfaces WPF avec DevExpress.",
-        "Accès aux données avec Entity Framework et SQL Server.",
-        "Maintenance d’APIs et résolution d’incidents en production."
+        "J'ai implemente et debugge des interfaces WPF avec DevExpress pour des flux operationnels metier.",
+        "J'ai travaille avec Entity Framework et SQL Server sur la maintenance corrective et evolutive.",
+        "J'ai resolu des incidents de production et maintenu des APIs et services, ce qui a construit la base technique de mon evolution vers un role de pilotage et d'integration."
       ]
     },
-    "tags": ["C#", ".NET", "WPF", "DevExpress", "Entity Framework"]
+    "tags": [
+      "C#",
+      ".NET Framework",
+      "WPF",
+      "DevExpress",
+      "Entity Framework",
+      "SQL Server"
+    ]
   },
   {
     "id": "pedidosya-data",
     "company": "PedidosYa",
-    "industry": { "es": "Delivery y e-commerce", "en": "Delivery and e-commerce", "fr": "Livraison et e-commerce" },
+    "industry": {
+      "es": "Delivery y e-commerce",
+      "en": "Delivery and ecommerce",
+      "fr": "Livraison et ecommerce"
+    },
     "role": {
-      "es": "Catalog Governance Senior Analyst",
+      "es": "Senior Analyst de Gobernanza de Catalogo",
       "en": "Catalog Governance Senior Analyst",
       "fr": "Senior Analyst · Gouvernance catalogue"
     },
@@ -84,27 +117,37 @@
     "end": "2024-08",
     "location": "LATAM",
     "summary": {
-      "es": "Trabajé en gobernanza, calidad de datos, automatización operativa y reporting para equipos regionales.",
-      "en": "I worked on governance, data quality, operational automation and reporting for regional teams.",
-      "fr": "J’ai travaillé sur la gouvernance, la qualité des données, l’automatisation opérationnelle et le reporting pour des équipes régionales."
+      "es": "Automatizacion operativa, calidad de datos y reporteria para equipos regionales, con foco en mejorar tiempos de respuesta y visibilidad para stakeholders.",
+      "en": "Operational automation, data quality and reporting for regional teams, focused on improving response times and stakeholder visibility.",
+      "fr": "Automatisation operationnelle, qualite des donnees et reporting pour des equipes regionales, avec un focus sur l'amelioration des temps de reponse et de la visibilite pour les parties prenantes."
     },
     "highlights": {
       "es": [
-        "Automatizaciones Python para reducir tareas manuales y validar reglas operativas.",
-        "Extracción y análisis con BigQuery; reporting en Looker Studio y hojas de cálculo.",
-        "Coordinación transversal mediante Jira, Trello, Slack y herramientas Google."
+        "Disene una automatizacion en Python integrada con Jira API y Google Drive para consolidar archivos, aplicar reglas de rechazo automatico y devolver feedback a cada ticket.",
+        "Resultado: reduccion del ETA de cierre de tickets de 24 a 8 horas y filtrado automatico del 70% de la informacion rechazable para un equipo de 20 personas.",
+        "Implemente dashboards en Looker Studio conectados a BigQuery para dar visibilidad de catalogo por stakeholder y pais.",
+        "Resultado: los reclamos por falta de visibilidad pasaron de 100% a 0%, convirtiendo el dashboard en herramienta de trabajo para abastecimiento y reposicion."
       ],
       "en": [
-        "Python automations to reduce manual work and validate operational rules.",
-        "Extraction and analysis with BigQuery; reporting in Looker Studio and spreadsheets.",
-        "Cross-functional coordination through Jira, Trello, Slack and Google tools."
+        "Designed a Python automation connected to the Jira API and Google Drive to consolidate files, apply automatic rejection rules and send feedback back to each ticket.",
+        "Result: ticket closure ETA dropped from 24 to 8 hours and 70% of rejectable information was automatically filtered for a 20-person team.",
+        "Implemented Looker Studio dashboards connected to BigQuery to provide catalog visibility by stakeholder and country.",
+        "Result: visibility complaints dropped from 100% to 0%, turning the dashboard into an everyday tool for replenishment and supply decisions."
       ],
       "fr": [
-        "Automatisations Python pour réduire les tâches manuelles et valider les règles opérationnelles.",
-        "Extraction et analyse avec BigQuery ; reporting dans Looker Studio et les tableurs.",
-        "Coordination transverse via Jira, Trello, Slack et les outils Google."
+        "J'ai concu une automatisation Python connectee a l'API Jira et a Google Drive pour consolider les fichiers, appliquer des regles de rejet automatiques et renvoyer le feedback a chaque ticket.",
+        "Resultat : le delai de cloture des tickets est passe de 24 a 8 heures et 70 % des informations rejetables ont ete filtrees automatiquement pour une equipe de 20 personnes.",
+        "J'ai implemente des dashboards Looker Studio connectes a BigQuery pour donner de la visibilite sur le catalogue par partie prenante et par pays.",
+        "Resultat : les reclamations liees au manque de visibilite sont passees de 100 % a 0 %, faisant du dashboard un outil quotidien pour l'approvisionnement et le reassort."
       ]
     },
-    "tags": ["Python", "BigQuery", "Data quality", "Looker Studio", "Automation"]
+    "tags": [
+      "Python",
+      "Jira API",
+      "BigQuery",
+      "Looker Studio",
+      "Automation",
+      "Reporting"
+    ]
   }
 ]

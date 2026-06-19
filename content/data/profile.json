@@ -2,64 +2,113 @@
   "name": "Juan Francisco Kniazev",
   "shortName": "Juan Kniazev",
   "headline": {
-    "es": "Technical Project Manager & Software Engineer",
-    "en": "Technical Project Manager & Software Engineer",
-    "fr": "Chef de projet technique & ingénieur logiciel"
+    "es": "Consultor tecnico-funcional e IT Project Manager",
+    "en": "Technical and Functional Consultant | IT Project Manager",
+    "fr": "Consultant technico-fonctionnel | Chef de projet IT"
   },
   "positioning": {
-    "es": "Conecto necesidades de negocio, software y datos para llevar iniciativas ERP e integraciones desde el análisis hasta producción.",
-    "en": "I connect business needs, software and data to take ERP initiatives and integrations from discovery to production.",
-    "fr": "Je relie les besoins métier, le logiciel et la data pour mener des projets ERP et d’intégration du cadrage à la production."
+    "es": "Diseno e implemento integraciones ERP, nuevas funcionalidades y soluciones de datos, combinando criterio de negocio, analisis funcional y ejecucion tecnica.",
+    "en": "I design and deliver ERP integrations, new functionalities and data solutions, combining business understanding, functional analysis and technical execution.",
+    "fr": "Je concois et mets en oeuvre des integrations ERP, de nouvelles fonctionnalites et des solutions data en combinant comprehension du metier, analyse fonctionnelle et execution technique."
   },
   "summary": {
-    "es": "Perfil técnico híbrido con experiencia en delivery de ERP retail, desarrollo .NET, integraciones REST/SOAP, automatización con Python y análisis de datos.",
-    "en": "Hybrid technical profile with experience in retail ERP delivery, .NET development, REST/SOAP integrations, Python automation and data analysis.",
-    "fr": "Profil technique hybride avec expérience en delivery ERP retail, développement .NET, intégrations REST/SOAP, automatisation Python et analyse de données."
+    "es": "Experiencia en gestion de proyectos IT, consultoria tecnico-funcional, integraciones ERP y desarrollo .NET sobre procesos de operacion, stock, contabilidad, ecommerce y reporteria.",
+    "en": "Experience in IT project management, technical and functional consulting, ERP integrations and .NET development across operations, inventory, accounting, ecommerce and reporting processes.",
+    "fr": "Experience en gestion de projet IT, conseil technico-fonctionnel, integrations ERP et developpement .NET autour des operations, du stock, de la comptabilite, de l'ecommerce et du reporting."
   },
   "location": {
-    "city": "Toulouse",
+    "city": "Velizy-Villacoublay, 78140",
     "country": "France",
     "display": {
-      "es": "Toulouse, Francia · disponible para reubicación",
-      "en": "Toulouse, France · open to relocation",
-      "fr": "Toulouse, France · mobilité possible"
+      "es": "Velizy-Villacoublay, Francia",
+      "en": "Velizy-Villacoublay, France",
+      "fr": "Velizy-Villacoublay, France"
     }
   },
   "availability": {
-    "es": "Disponible para oportunidades full-time",
-    "en": "Available for full-time opportunities",
-    "fr": "Disponible pour des opportunités à temps plein"
+    "es": "Disponible para oportunidades remotas, hibridas o presenciales",
+    "en": "Available for remote, hybrid or on-site opportunities",
+    "fr": "Disponible pour des opportunites a distance, hybrides ou sur site"
   },
   "workAuthorization": {
     "expires": "2026-08-26",
     "text": {
-      "es": "Autorizado a trabajar en Francia con Visa Vacances-Travail hasta el 26 de agosto de 2026.",
-      "en": "Authorized to work in France under a Working Holiday Visa until 26 August 2026.",
-      "fr": "Autorisé à travailler en France avec un Visa Vacances-Travail jusqu’au 26 août 2026."
+      "es": "Autorizacion de trabajo en Francia disponible bajo visa vigente hasta el 26 de agosto de 2026.",
+      "en": "Authorized to work in France under a current visa until 26 August 2026.",
+      "fr": "Autorise a travailler en France avec un visa en cours de validite jusqu'au 26 aout 2026."
     }
   },
   "email": "juankniazev1996@gmail.com",
   "phone": "+33 6 02 73 47 97",
   "linkedin": "https://www.linkedin.com/in/juan-kniazev/",
+  "website": "https://juankniazev.com",
   "github": "https://github.com/kniazev77",
   "languages": [
-    { "code": "es", "name": { "es": "Español", "en": "Spanish", "fr": "Espagnol" }, "level": { "es": "Nativo", "en": "Native", "fr": "Langue maternelle" } },
-    { "code": "en", "name": { "es": "Inglés", "en": "English", "fr": "Anglais" }, "level": { "es": "C1", "en": "C1", "fr": "C1" } },
-    { "code": "fr", "name": { "es": "Francés", "en": "French", "fr": "Français" }, "level": { "es": "A2 · en formación", "en": "A2 · currently studying", "fr": "A2 · en formation" } }
+    {
+      "code": "es",
+      "name": {
+        "es": "Espanol",
+        "en": "Spanish",
+        "fr": "Espagnol"
+      },
+      "level": {
+        "es": "Nativo",
+        "en": "Native",
+        "fr": "Langue maternelle"
+      }
+    },
+    {
+      "code": "en",
+      "name": {
+        "es": "Ingles",
+        "en": "English",
+        "fr": "Anglais"
+      },
+      "level": {
+        "es": "C1",
+        "en": "C1",
+        "fr": "C1"
+      }
+    },
+    {
+      "code": "fr",
+      "name": {
+        "es": "Frances",
+        "en": "French",
+        "fr": "Francais"
+      },
+      "level": {
+        "es": "B1 en progreso",
+        "en": "B1 improving",
+        "fr": "B1 (en progression)"
+      }
+    }
   ],
   "proofPoints": [
     {
+      "value": "PM",
+      "label": {
+        "es": "Liderazgo de proyectos de integracion y puesta en produccion",
+        "en": "Project leadership across integrations and go-lives",
+        "fr": "Pilotage de projets d'integration et de mises en production"
+      }
+    },
+    {
       "value": "ERP",
-      "label": { "es": "Delivery retail end-to-end", "en": "End-to-end retail delivery", "fr": "Delivery retail de bout en bout" }
+      "label": {
+        "es": "Consultoria funcional para stock, contabilidad y operacion",
+        "en": "Functional consulting for inventory, accounting and operations",
+        "fr": "Conseil fonctionnel pour le stock, la comptabilite et les operations"
+      }
     },
     {
       "value": ".NET",
-      "label": { "es": "C#, WPF, SQL Server e IIS", "en": "C#, WPF, SQL Server and IIS", "fr": "C#, WPF, SQL Server et IIS" }
-    },
-    {
-      "value": "Data",
-      "label": { "es": "Python, BigQuery y automatización", "en": "Python, BigQuery and automation", "fr": "Python, BigQuery et automatisation" }
+      "label": {
+        "es": "Trabajo directo en C#, WPF, SQL Server y debugging productivo",
+        "en": "Direct involvement in C#, WPF, SQL Server and production debugging",
+        "fr": "Intervention directe sur C#, WPF, SQL Server et le debugging en production"
+      }
     }
   ],
-  "lastReviewed": "2026-06-18"
+  "lastReviewed": "2026-06-19"
 }

@@ -1,10 +1,10 @@
-import { access, readFile } from 'node:fs/promises'
+﻿import { access, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { schemas } from './content-schema.mjs'
 
 const root = process.cwd()
 const dataDir = path.join(root, 'content', 'data')
-const placeholderPattern = /(\[EMAIL\]|\[TÉLÉPHONE\]|\[Dates?\]|_{4,}|TODO|TBD)/i
+const placeholderPattern = /(\[EMAIL\]|\[TÉLÉPHONE\]|\[Dates?\]|_{4,}|\bTODO\b|\bTBD\b)/i
 const errors = []
 const parsed = {}
 
