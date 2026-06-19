@@ -7,10 +7,14 @@ import { labels } from '@/lib/i18n'
 export function Hero({ locale, focus }: { locale: Locale; focus: FocusId }) {
   const t = labels[locale]
   const cv = getCvVariant(focus)
+  const languageSummary = profile.languages
+    .map((item) => `${item.name[locale]}: ${item.level[locale]}`)
+    .join(' · ')
+
   const facts = [
-    { label: locale === 'fr' ? 'Localisation' : locale === 'es' ? 'Ubicación' : 'Location', value: profile.location.display[locale] },
-    { label: locale === 'fr' ? 'Disponibilité' : locale === 'es' ? 'Disponibilidad' : 'Availability', value: profile.availability[locale] },
-    { label: locale === 'fr' ? 'Autorisation' : locale === 'es' ? 'Permiso de trabajo' : 'Work authorization', value: profile.workAuthorization.text[locale] }
+    { label: locale === 'fr' ? 'Localisation' : locale === 'es' ? 'Ubicacion' : 'Location', value: profile.location.display[locale] },
+    { label: locale === 'fr' ? 'Disponibilite' : locale === 'es' ? 'Disponibilidad' : 'Availability', value: profile.availability[locale] },
+    { label: locale === 'fr' ? 'Langues' : locale === 'es' ? 'Idiomas' : 'Languages', value: languageSummary }
   ]
 
   return (
@@ -26,7 +30,7 @@ export function Hero({ locale, focus }: { locale: Locale; focus: FocusId }) {
                 <a className="button button-primary" href="#cases">
                   {t.viewWork} <FiArrowDownRight aria-hidden />
                 </a>
-                <a className="button button-secondary" href={cv.file} download>
+                <a className="button button-secondary" href={cv.files[locale]} download>
                   {t.downloadCv} <FiDownload aria-hidden />
                 </a>
               </div>

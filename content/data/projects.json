@@ -3,30 +3,243 @@
     "id": "erp-integration",
     "slug": "erp-integration",
     "featured": true,
-    "focus": ["delivery", "software"],
-    "status": { "es": "Caso profesional anonimizado", "en": "Anonymized professional case", "fr": "Cas professionnel anonymisé" },
-    "title": { "es": "Delivery e integración para ERP retail", "en": "Retail ERP delivery and integration", "fr": "Delivery et intégration pour un ERP retail" },
+    "focus": [
+      "delivery",
+      "software"
+    ],
+    "status": {
+      "es": "Caso profesional anonimizado",
+      "en": "Anonymized professional case",
+      "fr": "Cas professionnel anonymise"
+    },
+    "title": {
+      "es": "Integracion POS + ecommerce + ERP contable",
+      "en": "POS, ecommerce and accounting ERP integration",
+      "fr": "Integration POS, ecommerce et ERP comptable"
+    },
     "short": {
-      "es": "De la necesidad operativa a una integración estable en producción.",
-      "en": "From an operational need to a stable production integration.",
-      "fr": "Du besoin opérationnel à une intégration stable en production."
+      "es": "Integracion critica de tres sistemas para registrar ventas y movimientos contables sin friccion operativa.",
+      "en": "Critical three-system integration to register sales and accounting movements without operational friction.",
+      "fr": "Integration critique de trois systemes pour enregistrer les ventes et les flux comptables sans friction operationnelle."
     },
     "problem": {
-      "es": "Un cliente necesitaba conectar procesos de su ecosistema con un ERP existente sin comprometer la continuidad operativa.",
-      "en": "A client needed to connect processes from its ecosystem to an existing ERP without compromising operational continuity.",
-      "fr": "Un client devait connecter les processus de son écosystème à un ERP existant sans compromettre la continuité opérationnelle."
+      "es": "Un cliente necesitaba que su operacion de ecommerce, el POS y el ERP contable-financiero trabajaran sincronizados, sin perder ventas ni comprometer la continuidad operativa.",
+      "en": "A client needed its ecommerce operation, POS and financial ERP to stay synchronized without losing sales or disrupting day-to-day operations.",
+      "fr": "Un client devait synchroniser son ecommerce, son POS et son ERP comptable-financier sans perdre de ventes ni perturber l'operation quotidienne."
     },
     "contribution": {
-      "es": "Clarifiqué requerimientos, estructuré el delivery, coordiné validaciones y contribuí en la implementación y troubleshooting de servicios REST/SOAP y SQL Server.",
-      "en": "I clarified requirements, structured delivery, coordinated validation and contributed to the implementation and troubleshooting of REST/SOAP services and SQL Server.",
-      "fr": "J’ai clarifié les besoins, structuré le delivery, coordonné la validation et contribué à l’implémentation et au troubleshooting de services REST/SOAP et SQL Server."
+      "es": "Lidere el relevamiento, disene la solucion, implemente la integracion REST y SOAP, coordine con terceros y valide los flujos con el cliente hasta la salida a produccion.",
+      "en": "I led discovery, designed the solution, implemented the REST and SOAP integration, coordinated with third parties and validated the flows with the client through go-live.",
+      "fr": "J'ai pilote le cadrage, concu la solution, implemente l'integration REST et SOAP, coordonne les tiers et valide les flux avec le client jusqu'a la mise en production."
     },
     "outcome": {
-      "es": "Integración desplegada con documentación, validación de flujos y soporte de estabilización.",
-      "en": "Integration deployed with documentation, flow validation and stabilization support.",
-      "fr": "Intégration déployée avec documentation, validation des flux et support de stabilisation."
+      "es": "99% de tasa de exito en la transferencia de datos y 100% de las ventas ecommerce registradas correctamente en los tres sistemas para un cliente con unas 250 transacciones diarias.",
+      "en": "99% successful data transfer and 100% of ecommerce sales correctly registered across all three systems for a client with roughly 250 daily transactions.",
+      "fr": "99 % de succes dans le transfert des donnees et 100 % des ventes ecommerce correctement enregistrees dans les trois systemes pour un client traitant environ 250 transactions par jour."
     },
-    "stack": ["C#", ".NET Framework", "REST", "SOAP", "SQL Server", "IIS"],
+    "stack": [
+      "C#",
+      ".NET Framework",
+      "REST",
+      "SOAP",
+      "SQL Server",
+      "IIS"
+    ],
+    "media": [],
+    "links": []
+  },
+  {
+    "id": "bi-module",
+    "slug": "bi-module",
+    "featured": true,
+    "focus": [
+      "delivery",
+      "data"
+    ],
+    "status": {
+      "es": "Caso profesional anonimizado",
+      "en": "Anonymized professional case",
+      "fr": "Cas professionnel anonymise"
+    },
+    "title": {
+      "es": "Modulo BI para cartera de clientes ERP",
+      "en": "BI module for the ERP client base",
+      "fr": "Module BI pour un portefeuille de clients ERP"
+    },
+    "short": {
+      "es": "Diseno de ETL y delivery de una solucion BI adoptada por mas de 50 clientes.",
+      "en": "ETL design and delivery of a BI solution adopted by more than 50 clients.",
+      "fr": "Conception ETL et delivery d'une solution BI adoptee par plus de 50 clients."
+    },
+    "problem": {
+      "es": "El producto no tenia un modulo BI y los clientes necesitaban visibilidad de ventas en vivo sin afectar la performance del ERP.",
+      "en": "The product had no BI module and clients needed live sales visibility without affecting ERP performance.",
+      "fr": "Le produit ne disposait pas de module BI et les clients avaient besoin de visibilite en temps reel sur leurs ventes sans degrader la performance de l'ERP."
+    },
+    "contribution": {
+      "es": "Disene el ETL, gestione el proyecto interno y coordine a un equipo de 3 personas entre datos SQL, backend API y frontend para disponibilizar metricas de negocio.",
+      "en": "I designed the ETL, managed the internal project and coordinated a 3-person team across SQL data, backend API and frontend to deliver business metrics.",
+      "fr": "J'ai concu l'ETL, pilote le projet interne et coordonne une equipe de 3 personnes sur la data SQL, l'API backend et le frontend afin de livrer des metriques metier."
+    },
+    "outcome": {
+      "es": "Adopcion del 100% de los clientes, despliegue sin errores y performance estable para mas de 50 empresas en Uruguay y Argentina.",
+      "en": "100% client adoption, an error-free rollout and stable performance for more than 50 companies across Uruguay and Argentina.",
+      "fr": "Adoption a 100 %, deploiement sans erreur et performance stable pour plus de 50 entreprises en Uruguay et en Argentine."
+    },
+    "stack": [
+      "SQL Server",
+      "ETL",
+      "BI",
+      "KPIs",
+      "API",
+      "Project management"
+    ],
+    "media": [],
+    "links": []
+  },
+  {
+    "id": "mercadolibre-stock-sync",
+    "slug": "mercadolibre-stock-sync",
+    "featured": true,
+    "focus": [
+      "delivery",
+      "software",
+      "data"
+    ],
+    "status": {
+      "es": "Caso profesional anonimizado",
+      "en": "Anonymized professional case",
+      "fr": "Cas professionnel anonymise"
+    },
+    "title": {
+      "es": "Sincronizacion de stock con Mercado Libre",
+      "en": "Inventory synchronization with Mercado Libre",
+      "fr": "Synchronisation de stock avec Mercado Libre"
+    },
+    "short": {
+      "es": "Solucion cloud para sincronizar stock individual y en packs entre el ERP y un ecommerce regional.",
+      "en": "Cloud solution to synchronize unit and bundle inventory between the ERP and a regional ecommerce platform.",
+      "fr": "Solution cloud pour synchroniser le stock unitaire et en packs entre l'ERP et une plateforme ecommerce regionale."
+    },
+    "problem": {
+      "es": "Un cliente necesitaba mantener sincronizado el stock local con Mercado Libre, incluyendo productos individuales y packs, para evitar quiebres y errores operativos.",
+      "en": "A client needed local inventory to stay synchronized with Mercado Libre, including single items and bundles, to avoid stockouts and operational errors.",
+      "fr": "Un client devait garder son stock local synchronise avec Mercado Libre, y compris les produits unitaires et les packs, afin d'eviter les ruptures et les erreurs operationnelles."
+    },
+    "contribution": {
+      "es": "Disene la arquitectura cloud, el ETL de consolidacion de stock y el proceso funcional dentro del ERP para administrar la operacion desde una unica plataforma.",
+      "en": "I designed the cloud architecture, the inventory ETL consolidation flow and the functional process inside the ERP so stock could be managed from one platform.",
+      "fr": "J'ai concu l'architecture cloud, le flux ETL de consolidation du stock et le processus fonctionnel dans l'ERP afin de centraliser la gestion sur une seule plateforme."
+    },
+    "outcome": {
+      "es": "Proyecto en produccion desde enero de 2025 sin bugs reportados, con una implementacion reusable para la base de 50+ clientes.",
+      "en": "Project in production since January 2025 with no reported bugs, with an implementation reusable across a 50+ client base.",
+      "fr": "Projet en production depuis janvier 2025 sans bug signale, avec une implementation reusable pour une base de plus de 50 clients."
+    },
+    "stack": [
+      "Cloud integration",
+      "ETL",
+      "ERP",
+      "Inventory",
+      "Mercado Libre",
+      "UI design"
+    ],
+    "media": [],
+    "links": []
+  },
+  {
+    "id": "pedidosya-automation",
+    "slug": "pedidosya-automation",
+    "featured": true,
+    "focus": [
+      "data",
+      "delivery"
+    ],
+    "status": {
+      "es": "Caso profesional",
+      "en": "Professional case",
+      "fr": "Cas professionnel"
+    },
+    "title": {
+      "es": "Automatizacion operativa de tickets en PedidosYa",
+      "en": "Operational ticket automation at PedidosYa",
+      "fr": "Automatisation operationnelle des tickets chez PedidosYa"
+    },
+    "short": {
+      "es": "Automatizacion con Python para reducir trabajo manual, acelerar cierres y liberar capacidad operativa.",
+      "en": "Python automation to reduce manual work, speed up closures and free operational capacity.",
+      "fr": "Automatisation Python pour reduire le travail manuel, accelerer les clotures et liberer de la capacite operationnelle."
+    },
+    "problem": {
+      "es": "Un equipo de 20 personas dedicaba la semana completa a limpiar archivos de tickets en Jira y cerrar casos con un ETA de 24 horas laborales.",
+      "en": "A 20-person team spent the full week cleaning ticket files in Jira and closing cases with a 24-business-hour ETA.",
+      "fr": "Une equipe de 20 personnes passait toute la semaine a nettoyer des fichiers de tickets dans Jira et a cloturer des cas avec un delai de 24 heures ouvrables."
+    },
+    "contribution": {
+      "es": "Desarrolle scripts en Python conectados con Jira API y Google Drive para consolidar archivos, aplicar reglas de rechazo automatico, distribuir el trabajo relevante y devolver feedback al ticket correspondiente.",
+      "en": "I built Python scripts connected to the Jira API and Google Drive to consolidate files, apply automatic rejection rules, route only relevant work and send feedback back to each ticket.",
+      "fr": "J'ai developpe des scripts Python connectes a l'API Jira et a Google Drive pour consolider les fichiers, appliquer des regles de rejet automatique, distribuer uniquement le travail pertinent et renvoyer le feedback au ticket associe."
+    },
+    "outcome": {
+      "es": "ETA reducido de 24 a 8 horas y filtrado automatico del 70% de la informacion rechazable, liberando tiempo para iniciativas internas y formacion.",
+      "en": "ETA reduced from 24 to 8 hours and 70% of rejectable information automatically filtered, freeing time for internal initiatives and training.",
+      "fr": "Delai reduit de 24 a 8 heures et 70 % des informations rejetables filtrees automatiquement, liberant du temps pour des initiatives internes et de la formation."
+    },
+    "stack": [
+      "Python",
+      "Jira API",
+      "Google Drive",
+      "Automation",
+      "Data validation"
+    ],
+    "media": [],
+    "links": []
+  },
+  {
+    "id": "catalog-visibility",
+    "slug": "catalog-visibility",
+    "featured": true,
+    "focus": [
+      "data",
+      "delivery"
+    ],
+    "status": {
+      "es": "Caso profesional",
+      "en": "Professional case",
+      "fr": "Cas professionnel"
+    },
+    "title": {
+      "es": "Dashboards de catalogo para stakeholders regionales",
+      "en": "Catalog dashboards for regional stakeholders",
+      "fr": "Dashboards catalogue pour les parties prenantes regionales"
+    },
+    "short": {
+      "es": "Visibilidad de catalogos por pais y stakeholder mediante BigQuery y Looker Studio.",
+      "en": "Catalog visibility by country and stakeholder through BigQuery and Looker Studio.",
+      "fr": "Visibilite du catalogue par pays et par partie prenante via BigQuery et Looker Studio."
+    },
+    "problem": {
+      "es": "Los stakeholders no tenian visibilidad de sus catalogos porque no contaban con acceso directo al middleware de la aplicacion.",
+      "en": "Stakeholders had no visibility into their catalogs because they lacked direct access to the application's middleware.",
+      "fr": "Les parties prenantes n'avaient aucune visibilite sur leurs catalogues car elles n'avaient pas d'acces direct au middleware de l'application."
+    },
+    "contribution": {
+      "es": "Disene e implemente dashboards en Looker Studio conectados a BigQuery para reflejar informacion de catalogo por stakeholder y pais.",
+      "en": "I designed and implemented Looker Studio dashboards connected to BigQuery to reflect catalog information by stakeholder and country.",
+      "fr": "J'ai concu et implemente des dashboards Looker Studio connectes a BigQuery pour afficher les informations catalogue par partie prenante et par pays."
+    },
+    "outcome": {
+      "es": "Los reclamos y consultas por falta de visibilidad pasaron de 100% a 0%, y el dashboard se convirtio en herramienta de trabajo para abastecimiento y reposicion.",
+      "en": "Complaints and questions caused by lack of visibility dropped from 100% to 0%, and the dashboard became a working tool for supply and replenishment decisions.",
+      "fr": "Les reclamations et questions liees au manque de visibilite sont passees de 100 % a 0 %, et le dashboard est devenu un outil de travail pour l'approvisionnement et le reassort."
+    },
+    "stack": [
+      "BigQuery",
+      "Looker Studio",
+      "Reporting",
+      "Catalogs",
+      "Stakeholder visibility"
+    ],
     "media": [],
     "links": []
   },
@@ -34,46 +247,79 @@
     "id": "ip43-nba",
     "slug": "ip43-nba",
     "featured": true,
-    "focus": ["software", "data", "delivery"],
-    "status": { "es": "En producción", "en": "In production", "fr": "En production" },
-    "title": { "es": "IP43 NBA", "en": "IP43 NBA", "fr": "IP43 NBA" },
+    "focus": [
+      "software",
+      "data",
+      "delivery"
+    ],
+    "status": {
+      "es": "En produccion",
+      "en": "In production",
+      "fr": "En production"
+    },
+    "title": {
+      "es": "IP43 NBA",
+      "en": "IP43 NBA",
+      "fr": "IP43 NBA"
+    },
     "short": {
-      "es": "Producto cross-platform de predicciones, grupos y rankings NBA.",
-      "en": "Cross-platform NBA predictions, groups and rankings product.",
-      "fr": "Produit cross-platform de pronostics, groupes et classements NBA."
+      "es": "Producto propio de predicciones, grupos privados y rankings para fan communities.",
+      "en": "Owned product for predictions, private groups and rankings for fan communities.",
+      "fr": "Produit proprietaire de pronostics, groupes prives et classements pour des communautes de fans."
     },
     "problem": {
-      "es": "Las competencias informales de predicciones carecen de una experiencia propia, reglas automáticas y rankings por comunidad.",
-      "en": "Informal prediction competitions lack an owned experience, automated rules and community rankings.",
-      "fr": "Les concours de pronostics informels manquent d’une expérience dédiée, de règles automatiques et de classements communautaires."
+      "es": "Las competencias informales de predicciones no ofrecen una experiencia propia, reglas automaticas ni rankings por comunidad.",
+      "en": "Informal prediction competitions do not provide a dedicated experience, automated rules or community rankings.",
+      "fr": "Les competitions informelles de pronostics ne proposent ni experience dediee, ni regles automatiques, ni classements par communaute."
     },
     "contribution": {
-      "es": "Definí el producto y desarrollé frontend, modelo de datos, autenticación, funciones backend, integración NBA y despliegue.",
-      "en": "I defined the product and built the frontend, data model, authentication, backend functions, NBA integration and deployment.",
-      "fr": "J’ai défini le produit et développé le frontend, le modèle de données, l’authentification, les fonctions backend, l’intégration NBA et le déploiement."
+      "es": "Defini el producto y desarrolle frontend, autenticacion, modelo de datos, integracion NBA y despliegue.",
+      "en": "I defined the product and built the frontend, authentication, data model, NBA integration and deployment.",
+      "fr": "J'ai defini le produit et developpe le frontend, l'authentification, le modele de donnees, l'integration NBA et le deploiement."
     },
     "outcome": {
-      "es": "Aplicación web desplegada con OAuth, grupos privados, predicciones y leaderboards.",
+      "es": "Aplicacion web desplegada con OAuth, grupos privados, predicciones y leaderboards.",
       "en": "Deployed web application with OAuth, private groups, predictions and leaderboards.",
-      "fr": "Application web déployée avec OAuth, groupes privés, pronostics et classements."
+      "fr": "Application web deployee avec OAuth, groupes prives, pronostics et leaderboards."
     },
-    "stack": ["React Native", "Expo", "TypeScript", "Supabase", "PostgreSQL", "Vercel"],
+    "stack": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Vercel"
+    ],
     "media": [
       "/images/projects/ip43nba-games.jpg",
       "/images/projects/ip43nba-groups.jpg",
       "/images/projects/ip43nba-rankingglobal.jpg"
     ],
     "links": [
-      { "label": "Web", "url": "https://ip43-nba.vercel.app/login" }
+      {
+        "label": "Web",
+        "url": "https://ip43-nba.vercel.app/login"
+      }
     ]
   },
   {
     "id": "walletbot",
     "slug": "walletbot",
-    "featured": true,
-    "focus": ["software", "data"],
-    "status": { "es": "Servicio en producción", "en": "Production service", "fr": "Service en production" },
-    "title": { "es": "WalletBot", "en": "WalletBot", "fr": "WalletBot" },
+    "featured": false,
+    "focus": [
+      "software",
+      "data"
+    ],
+    "status": {
+      "es": "Servicio en produccion",
+      "en": "Production service",
+      "fr": "Service en production"
+    },
+    "title": {
+      "es": "WalletBot",
+      "en": "WalletBot",
+      "fr": "WalletBot"
+    },
     "short": {
       "es": "Finanzas personales mediante Telegram y una API Python.",
       "en": "Personal finance through Telegram and a Python API.",
@@ -81,51 +327,26 @@
     },
     "problem": {
       "es": "Registrar gastos compartidos suele requerir abrir aplicaciones, completar formularios y reconciliar datos manualmente.",
-      "en": "Tracking shared expenses often requires opening apps, filling forms and reconciling data manually.",
-      "fr": "Le suivi des dépenses partagées demande souvent d’ouvrir des applications, de remplir des formulaires et de rapprocher les données manuellement."
+      "en": "Tracking shared expenses often requires opening apps, filling forms and manually reconciling data.",
+      "fr": "Le suivi des depenses partagees demande souvent d'ouvrir des applications, de remplir des formulaires et de rapprocher les donnees manuellement."
     },
     "contribution": {
-      "es": "Diseñé la API, reglas de negocio e integración con Telegram; dockericé y desplegué el servicio en un VPS.",
-      "en": "I designed the API, business rules and Telegram integration; containerized and deployed the service to a VPS.",
-      "fr": "J’ai conçu l’API, les règles métier et l’intégration Telegram ; conteneurisé et déployé le service sur un VPS."
+      "es": "Disene la API, reglas de negocio e integracion con Telegram; containerice y desplegue el servicio en un VPS.",
+      "en": "I designed the API, business rules and Telegram integration, then containerized and deployed the service to a VPS.",
+      "fr": "J'ai concu l'API, les regles metier et l'integration Telegram, puis conteneurise et deployee le service sur un VPS."
     },
     "outcome": {
       "es": "Flujo operativo por chat con mantenimiento, logs y mejoras incrementales.",
       "en": "Chat-based operational flow with maintenance, logs and incremental improvements.",
-      "fr": "Flux opérationnel par chat avec maintenance, logs et améliorations progressives."
+      "fr": "Flux operationnel par chat avec maintenance, logs et ameliorations incrementales."
     },
-    "stack": ["Python", "FastAPI", "Telegram Bot API", "Docker", "Hetzner"],
-    "media": [],
-    "links": []
-  },
-  {
-    "id": "data-automation",
-    "slug": "data-automation",
-    "featured": true,
-    "focus": ["data", "delivery"],
-    "status": { "es": "Caso profesional anonimizado", "en": "Anonymized professional case", "fr": "Cas professionnel anonymisé" },
-    "title": { "es": "Automatización de operaciones de datos", "en": "Data operations automation", "fr": "Automatisation des opérations data" },
-    "short": {
-      "es": "Python y BigQuery para validar datos, reducir trabajo manual y acelerar decisiones.",
-      "en": "Python and BigQuery to validate data, reduce manual work and accelerate decisions.",
-      "fr": "Python et BigQuery pour valider les données, réduire le travail manuel et accélérer les décisions."
-    },
-    "problem": {
-      "es": "Procesos regionales dependían de controles repetitivos, archivos y seguimiento manual de reglas operativas.",
-      "en": "Regional processes depended on repetitive checks, files and manual tracking of operational rules.",
-      "fr": "Les processus régionaux dépendaient de contrôles répétitifs, de fichiers et d’un suivi manuel des règles opérationnelles."
-    },
-    "contribution": {
-      "es": "Construí automatizaciones Python, consultas BigQuery, reglas de validación y reporting para stakeholders.",
-      "en": "I built Python automations, BigQuery queries, validation rules and stakeholder reporting.",
-      "fr": "J’ai développé des automatisations Python, des requêtes BigQuery, des règles de validation et du reporting pour les parties prenantes."
-    },
-    "outcome": {
-      "es": "Procesos más consistentes y una base reutilizable para controles y análisis operativos.",
-      "en": "More consistent processes and a reusable foundation for operational checks and analysis.",
-      "fr": "Des processus plus cohérents et une base réutilisable pour les contrôles et analyses opérationnels."
-    },
-    "stack": ["Python", "BigQuery", "Looker Studio", "Google Sheets", "Jira"],
+    "stack": [
+      "Python",
+      "FastAPI",
+      "Telegram Bot API",
+      "Docker",
+      "Hetzner"
+    ],
     "media": [],
     "links": []
   },
@@ -133,30 +354,47 @@
     "id": "image-handler",
     "slug": "image-handler",
     "featured": false,
-    "focus": ["software", "data"],
-    "status": { "es": "Herramienta de automatización", "en": "Automation tool", "fr": "Outil d’automatisation" },
-    "title": { "es": "ImageHandler", "en": "ImageHandler", "fr": "ImageHandler" },
+    "focus": [
+      "software",
+      "data"
+    ],
+    "status": {
+      "es": "Herramienta de automatizacion",
+      "en": "Automation tool",
+      "fr": "Outil d'automatisation"
+    },
+    "title": {
+      "es": "ImageHandler",
+      "en": "ImageHandler",
+      "fr": "ImageHandler"
+    },
     "short": {
-      "es": "Pipeline de imágenes de producto hacia SQL Server.",
+      "es": "Pipeline de imagenes de producto hacia SQL Server.",
       "en": "Product image pipeline into SQL Server.",
-      "fr": "Pipeline d’images produit vers SQL Server."
+      "fr": "Pipeline d'images produit vers SQL Server."
     },
     "problem": {
-      "es": "Las imágenes de productos debían descargarse desde múltiples fuentes y cargarse de forma consistente al ERP.",
-      "en": "Product images needed to be downloaded from multiple sources and loaded consistently into the ERP.",
-      "fr": "Les images produit devaient être téléchargées depuis plusieurs sources et chargées de manière cohérente dans l’ERP."
+      "es": "Las imagenes de productos debian descargarse desde multiples fuentes y cargarse de forma consistente al ERP.",
+      "en": "Product images had to be downloaded from multiple sources and loaded consistently into the ERP.",
+      "fr": "Les images produit devaient etre telechargees depuis plusieurs sources et integrees de maniere coherente dans l'ERP."
     },
     "contribution": {
-      "es": "Implementé lectura CSV, descarga HTTP/SFTP, generación de miniaturas e inserción en SQL Server.",
-      "en": "I implemented CSV reading, HTTP/SFTP download, thumbnail generation and SQL Server insertion.",
-      "fr": "J’ai mis en œuvre la lecture CSV, le téléchargement HTTP/SFTP, la génération de miniatures et l’insertion dans SQL Server."
+      "es": "Implemente lectura CSV, descarga HTTP y SFTP, generacion de miniaturas e insercion en SQL Server.",
+      "en": "I implemented CSV reading, HTTP and SFTP downloads, thumbnail generation and SQL Server insertion.",
+      "fr": "J'ai implemente la lecture CSV, le telechargement HTTP et SFTP, la generation de miniatures et l'insertion dans SQL Server."
     },
     "outcome": {
-      "es": "Proceso repetible para incorporar imágenes y miniaturas en la base del ERP.",
-      "en": "Repeatable process to add images and thumbnails to the ERP database.",
-      "fr": "Processus reproductible pour intégrer les images et miniatures dans la base ERP."
+      "es": "Proceso repetible para incorporar imagenes y miniaturas en la base del ERP.",
+      "en": "Repeatable process to add images and thumbnails into the ERP database.",
+      "fr": "Processus repetable pour integrer des images et des miniatures dans la base ERP."
     },
-    "stack": ["Python", "HTTP", "SFTP", "CSV", "SQL Server"],
+    "stack": [
+      "Python",
+      "HTTP",
+      "SFTP",
+      "CSV",
+      "SQL Server"
+    ],
     "media": [],
     "links": []
   },
@@ -164,34 +402,58 @@
     "id": "rematap",
     "slug": "rematap",
     "featured": false,
-    "focus": ["software", "delivery"],
-    "status": { "es": "MVP en desarrollo", "en": "MVP in development", "fr": "MVP en développement" },
-    "title": { "es": "Rematap", "en": "Rematap", "fr": "Rematap" },
+    "focus": [
+      "software",
+      "delivery"
+    ],
+    "status": {
+      "es": "MVP en desarrollo",
+      "en": "MVP in development",
+      "fr": "MVP en developpement"
+    },
+    "title": {
+      "es": "Rematap",
+      "en": "Rematap",
+      "fr": "Rematap"
+    },
     "short": {
-      "es": "Marketplace social con subastas, pujas atómicas y chat.",
+      "es": "Marketplace social con subastas, pujas atomicas y chat.",
       "en": "Social marketplace with auctions, atomic bidding and chat.",
-      "fr": "Marketplace social avec enchères, offres atomiques et chat."
+      "fr": "Marketplace social avec encheres, mises atomiques et chat."
     },
     "problem": {
-      "es": "Las subastas informales en redes sociales no integran reglas claras, seguridad de acceso y comunicación post-subasta.",
-      "en": "Informal social auctions do not integrate clear rules, access security and post-auction communication.",
-      "fr": "Les enchères informelles sur les réseaux sociaux n’intègrent pas de règles claires, de sécurité d’accès ni de communication après l’enchère."
+      "es": "Las subastas informales en redes sociales no integran reglas claras, seguridad de acceso y comunicacion post-subasta.",
+      "en": "Informal auctions on social platforms do not integrate clear rules, access security or post-auction communication.",
+      "fr": "Les encheres informelles sur les reseaux sociaux n'integrent ni regles claires, ni securite d'acces, ni communication apres l'enchere."
     },
     "contribution": {
-      "es": "Definí el MVP, modelo de datos, políticas RLS y funciones SQL para pujas consistentes.",
+      "es": "Defini el MVP, el modelo de datos, politicas RLS y funciones SQL para pujas consistentes.",
       "en": "I defined the MVP, data model, RLS policies and SQL functions for consistent bidding.",
-      "fr": "J’ai défini le MVP, le modèle de données, les politiques RLS et les fonctions SQL pour des enchères cohérentes."
+      "fr": "J'ai defini le MVP, le modele de donnees, les politiques RLS et les fonctions SQL pour des encheres coherentes."
     },
     "outcome": {
-      "es": "Base funcional para validar publicación, subasta, gestión y chat entre participantes.",
+      "es": "Base funcional para validar publicacion, subasta, gestion y chat entre participantes.",
       "en": "Functional foundation to validate listing, auction, management and participant chat.",
-      "fr": "Base fonctionnelle pour valider la publication, l’enchère, la gestion et le chat entre participants."
+      "fr": "Base fonctionnelle pour valider la publication, l'enchere, la gestion et le chat entre participants."
     },
-    "stack": ["React Native", "Expo", "TypeScript", "Supabase", "PostgreSQL", "RLS"],
+    "stack": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "RLS"
+    ],
     "media": [],
     "links": [
-      { "label": "Repository", "url": "https://github.com/kniazev77/Reamatapp" },
-      { "label": "Web", "url": "https://reamatapp.vercel.app/feed" }
+      {
+        "label": "Repository",
+        "url": "https://github.com/kniazev77/Reamatapp"
+      },
+      {
+        "label": "Web",
+        "url": "https://reamatapp.vercel.app/feed"
+      }
     ]
   }
 ]

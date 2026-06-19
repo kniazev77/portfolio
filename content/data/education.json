@@ -2,18 +2,60 @@
   "education": [
     {
       "institution": "Universidad de la Empresa (UDE)",
+      "faculty": "Facultad de Ingenieria",
       "location": "Montevideo, Uruguay",
       "start": "2023-03",
       "end": "2025-12",
       "title": {
-        "es": "Analista en Tecnologías de la Información · Técnico en Informática",
-        "en": "Information Technology Analyst · Computer Technician",
-        "fr": "Analyste en technologies de l’information · Technicien informatique"
+        "es": "Analista en Tecnologias de la Informacion y Tecnico en Informatica",
+        "en": "Information Technology Analyst and Computer Technician",
+        "fr": "Analyste en technologies de l'information et technicien en informatique"
       },
       "status": {
-        "es": "Formación finalizada; título en trámite",
-        "en": "Program completed; diploma being issued",
-        "fr": "Formation terminée ; diplôme en cours de délivrance"
+        "es": "Formacion completada; titulo en tramite",
+        "en": "Completed; degree in process",
+        "fr": "Formation terminee ; diplome en cours d'emission"
+      },
+      "description": {
+        "es": "Formacion orientada a desarrollo de software, arquitectura, bases de datos y gestion de proyectos, con enfoque practico para implementar soluciones tecnologicas.",
+        "en": "Program focused on software development, architecture, databases and project management, with a practical approach to implementing technology solutions.",
+        "fr": "Formation orientee vers le developpement logiciel, l'architecture, les bases de donnees et la gestion de projet, avec une approche pratique de l'implementation de solutions technologiques."
+      },
+      "focusAreas": {
+        "es": [
+          "Desarrollo de software",
+          "Gestion de proyectos",
+          "Arquitectura de software",
+          "Diseno de producto",
+          "Bases de datos"
+        ],
+        "en": [
+          "Software development",
+          "Project management",
+          "Software architecture",
+          "Product design",
+          "Databases"
+        ],
+        "fr": [
+          "Developpement logiciel",
+          "Gestion de projet",
+          "Architecture logicielle",
+          "Conception produit",
+          "Bases de donnees"
+        ]
+      },
+      "intermediateCredential": {
+        "es": "Programador Java/.NET",
+        "en": "Java/.NET Programmer",
+        "fr": "Programmeur Java/.NET"
+      },
+      "capstone": {
+        "name": "EducaDron",
+        "description": {
+          "es": "Proyecto final sobre simulacion del uso de drones en practicas agricolas, desarrollado con Unity y desplegado en Azure.",
+          "en": "Capstone project on simulating drone usage in agricultural practices, built with Unity and deployed on Azure.",
+          "fr": "Projet final sur la simulation de l'usage des drones dans les pratiques agricoles, developpe avec Unity et deployee sur Azure."
+        }
       },
       "url": "https://ude.edu.uy/facultad-de-ingenieria/tecnico-en-informatica/"
     }
@@ -23,39 +65,81 @@
       "name": "Certified Scrum Master",
       "issuer": "LearnQuest · Coursera",
       "status": "completed",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/AMSMAM25A9NF"
+      "date": "2023-01",
+      "description": {
+        "es": "Scrum, gestion de sprints, reporting, riesgos y practicas de desarrollo agil como CI, TDD y BDD.",
+        "en": "Scrum, sprint management, reporting, risk management, and agile development practices such as CI, TDD and BDD.",
+        "fr": "Scrum, gestion des sprints, reporting, gestion des risques et pratiques de developpement agile comme CI, TDD et BDD."
+      },
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/AMSMAM25A9NF",
+      "credentialId": "AMSMAM25A9NF"
     },
     {
       "name": "Foundations of Project Management",
       "issuer": "Google · Coursera",
       "status": "completed",
-      "url": "https://www.coursera.org/account/accomplishments/verify/QV7GCGJQHJSV"
+      "date": "2025-01",
+      "description": {
+        "es": "Fundamentos de gestion de proyectos, ciclo de vida, metodologias y relacion entre estructura organizacional y delivery.",
+        "en": "Project management fundamentals, project life cycle, methodologies, and the relationship between organizational structure and delivery.",
+        "fr": "Fondamentaux de la gestion de projet, cycle de vie, methodologies et lien entre structure organisationnelle et delivery."
+      },
+      "url": "https://www.coursera.org/account/accomplishments/verify/QV7GCGJQHJSV",
+      "credentialId": "QV7GCGJQHJSV"
     },
     {
       "name": "Project Planning: Putting It All Together",
       "issuer": "Google · Coursera",
       "status": "completed",
-      "url": "https://www.coursera.org/account/accomplishments/verify/IHFO6F6GF7ZA"
+      "date": "2025-03",
+      "description": {
+        "es": "Planificacion de proyectos, gestion de riesgos, presupuesto, seguimiento y plan de comunicacion.",
+        "en": "Project planning, risk management, budgeting, tracking and communication planning.",
+        "fr": "Planification de projet, gestion des risques, budget, suivi et plan de communication."
+      },
+      "url": "https://www.coursera.org/account/accomplishments/verify/IHFO6F6GF7ZA",
+      "credentialId": "IHFO6F6GF7ZA"
     },
     {
       "name": "n8n: No-code automation & AI agents",
       "issuer": "Udemy",
       "status": "completed",
-      "url": "https://www.udemy.com/certificate/UC-e1cef5fa-151b-4423-a009-9a52cce7f41e/"
+      "date": "2025-11",
+      "description": {
+        "es": "Automatizacion no-code con agentes de IA, workflows en n8n, integraciones API, RAG y uso multimodal de modelos.",
+        "en": "No-code automation with AI agents, n8n workflows, API integrations, RAG and multimodal model usage.",
+        "fr": "Automatisation no-code avec agents IA, workflows n8n, integrations API, RAG et usage multimodal des modeles."
+      },
+      "url": "https://www.udemy.com/certificate/UC-e1cef5fa-151b-4423-a009-9a52cce7f41e/",
+      "credentialId": "UC-e1cef5fa-151b-4423-a009-9a52cce7f41e"
     }
   ],
   "achievement": {
     "date": "2017-09",
     "title": {
-      "es": "Ganador · Hackathon Agro, segunda edición",
-      "en": "Winner · Hackathon Agro, second edition",
-      "fr": "Lauréat · Hackathon Agro, deuxième édition"
+      "es": "Ganador · Hackathon Agro 2017",
+      "en": "Winner · Hackathon Agro 2017",
+      "fr": "Laureat · Hackathon Agro 2017"
     },
     "description": {
-      "es": "Solución con sensores y análisis predictivo para prevenir pérdidas por enfermedades foliares en cebada.",
-      "en": "Sensor and predictive analytics solution to reduce losses caused by barley leaf disease.",
-      "fr": "Solution combinant capteurs et analyse prédictive pour réduire les pertes liées aux maladies foliaires de l’orge."
+      "es": "Primer puesto en un equipo multidisciplinario de 3 integrantes con una solucion de sensores IoT, machine learning y analitica predictiva para prevenir perdidas en cultivos de cebada por manchas foliares.",
+      "en": "First place in a multidisciplinary team of 3 with an IoT sensors, machine learning and predictive analytics solution to prevent barley crop losses caused by leaf spot disease.",
+      "fr": "Premiere place dans une equipe pluridisciplinaire de 3 personnes avec une solution fondee sur des capteurs IoT, le machine learning et l'analyse predictive pour prevenir les pertes sur des cultures d'orge dues aux maladies foliaires."
     },
-    "url": "https://www.gov.uk/government/news/successful-second-hackathon-agro-in-montevideo.es-419"
+    "url": "https://cuti.org.uy/noticias/de-interes/jovenes-desarrollaron-una-idea-para-reducir-en-un-10-las-perdidas-de-los-productores-por-manchas-foliares-en-las-redes-de-cebada/",
+    "references": [
+      {
+        "label": "CUTI · Articulo principal",
+        "url": "https://cuti.org.uy/noticias/de-interes/jovenes-desarrollaron-una-idea-para-reducir-en-un-10-las-perdidas-de-los-productores-por-manchas-foliares-en-las-redes-de-cebada/"
+      },
+      {
+        "label": "GOV.UK · Embajada Britanica en Montevideo",
+        "url": "https://www.gov.uk/government/news/successful-second-hackathon-agro-in-montevideo.es-419"
+      },
+      {
+        "label": "CUTI · Entrevista",
+        "url": "https://cuti.org.uy/en/noticias/de-interes/desde-la-hackathon-agro-buscamos-contribuir-a-cuidar-el-negocio-y-el-ambiente/"
+      }
+    ]
   }
 }

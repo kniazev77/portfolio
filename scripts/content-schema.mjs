@@ -1,4 +1,4 @@
-import { z } from 'zod'
+﻿import { z } from 'zod'
 
 export const localized = z.object({
   es: z.string().min(1),
@@ -8,6 +8,11 @@ export const localized = z.object({
 
 const month = z.string().regex(/^\d{4}-\d{2}$/)
 const url = z.string().url()
+const localizedFile = z.object({
+  es: z.string().startsWith('/cv/').endsWith('.pdf'),
+  en: z.string().startsWith('/cv/').endsWith('.pdf'),
+  fr: z.string().startsWith('/cv/').endsWith('.pdf')
+})
 
 export const schemas = {
   'profile.json': z.object({
@@ -22,6 +27,7 @@ export const schemas = {
     email: z.email(),
     phone: z.string().min(8),
     linkedin: url,
+    website: url,
     github: url,
     languages: z.array(z.object({ code: z.string(), name: localized, level: localized })).min(1),
     proofPoints: z.array(z.object({ value: z.string(), label: localized })).length(3),
@@ -35,13 +41,42 @@ export const schemas = {
   })),
   'education.json': z.object({
     education: z.array(z.object({
-      institution: z.string(), location: z.string(), start: month, end: month,
-      title: localized, status: localized, url
+      institution: z.string(),
+      faculty: z.string(),
+      location: z.string(),
+      start: month,
+      end: month,
+      title: localized,
+      status: localized,
+      description: localized,
+      focusAreas: z.object({
+        es: z.array(z.string()).min(1),
+        en: z.array(z.string()).min(1),
+        fr: z.array(z.string()).min(1)
+      }),
+      intermediateCredential: localized,
+      capstone: z.object({
+        name: z.string(),
+        description: localized
+      }),
+      url
     })),
     certifications: z.array(z.object({
-      name: z.string(), issuer: z.string(), status: z.enum(['completed', 'in-progress']), url
+      name: z.string(),
+      issuer: z.string(),
+      status: z.enum(['completed', 'in-progress']),
+      date: month,
+      description: localized,
+      url,
+      credentialId: z.string().optional()
     })),
-    achievement: z.object({ date: month, title: localized, description: localized, url })
+    achievement: z.object({
+      date: month,
+      title: localized,
+      description: localized,
+      url,
+      references: z.array(z.object({ label: z.string(), url })).min(1)
+    })
   }),
   'projects.json': z.array(z.object({
     id: z.string(), slug: z.string().regex(/^[a-z0-9-]+$/), featured: z.boolean(),
@@ -52,7 +87,8 @@ export const schemas = {
   })),
   'cvVariants.json': z.array(z.object({
     id: z.enum(['delivery', 'software', 'data']), label: localized,
-    file: z.string().startsWith('/cv/').endsWith('.pdf'),
+    pitch: localized,
+    files: localizedFile,
     prioritySkills: z.array(z.string()).min(1), projectIds: z.array(z.string()).min(1)
   })).length(3)
 }

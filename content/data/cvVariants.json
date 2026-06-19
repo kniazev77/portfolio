@@ -1,23 +1,98 @@
 [
   {
     "id": "delivery",
-    "label": { "es": "Project Management / ERP", "en": "Project Management / ERP", "fr": "Gestion de projet / ERP" },
-    "file": "/cv/Juan-Kniazev-CV-Project-Management-ERP.pdf",
-    "prioritySkills": ["ERP delivery", "AMOA", "Stakeholder management", "REST/SOAP", "Agile/Scrum", "SQL Server"],
-    "projectIds": ["erp-integration", "ip43-nba", "data-automation"]
+    "label": {
+      "es": "Gestion de proyectos y consultoria funcional",
+      "en": "Project Management and Functional Consulting",
+      "fr": "Gestion de projet et conseil fonctionnel"
+    },
+    "pitch": {
+      "es": "Liderazgo de iniciativas ERP e integraciones, desde el relevamiento funcional hasta la coordinacion del delivery y la salida a produccion.",
+      "en": "ERP and integration project leadership, from functional discovery through delivery coordination and go-live.",
+      "fr": "Pilotage de projets ERP et d'integration, du cadrage fonctionnel a la coordination du delivery et a la mise en production."
+    },
+    "files": {
+      "es": "/cv/Juan-Kniazev-CV-Consultoria-Funcional-PM-ES.pdf",
+      "en": "/cv/Juan-Kniazev-CV-Functional-Consulting-PM-EN.pdf",
+      "fr": "/cv/Juan-Kniazev-CV-Conseil-Fonctionnel-PM-FR.pdf"
+    },
+    "prioritySkills": [
+      "Project management",
+      "Functional consulting",
+      "ERP",
+      "Stakeholder management",
+      "REST/SOAP",
+      "SQL Server"
+    ],
+    "projectIds": [
+      "erp-integration",
+      "bi-module",
+      "mercadolibre-stock-sync",
+      "pedidosya-automation"
+    ]
   },
   {
     "id": "software",
-    "label": { "es": ".NET & Integraciones", "en": ".NET & Integrations", "fr": ".NET & Intégrations" },
-    "file": "/cv/Juan-Kniazev-CV-DotNet-Integrations.pdf",
-    "prioritySkills": ["C#", ".NET Framework", "WPF", "SQL Server", "REST/SOAP", "IIS"],
-    "projectIds": ["erp-integration", "image-handler", "walletbot", "ip43-nba"]
+    "label": {
+      "es": "Desarrollo .NET e integraciones",
+      "en": ".NET Development and Integrations",
+      "fr": "Developpement .NET et integrations"
+    },
+    "pitch": {
+      "es": "Trabajo directo sobre .NET, WPF, SQL Server e integraciones empresariales, con responsabilidad tecnica y cercania al negocio.",
+      "en": "Direct involvement across .NET, WPF, SQL Server and enterprise integrations, with technical ownership and close business alignment.",
+      "fr": "Intervention directe sur .NET, WPF, SQL Server et les integrations d'entreprise, avec responsabilite technique et proximite metier."
+    },
+    "files": {
+      "es": "/cv/Juan-Kniazev-CV-DotNet-Integraciones-ES.pdf",
+      "en": "/cv/Juan-Kniazev-CV-DotNet-Integrations-EN.pdf",
+      "fr": "/cv/Juan-Kniazev-CV-DotNet-Integrations-FR.pdf"
+    },
+    "prioritySkills": [
+      "C#",
+      ".NET Framework",
+      "WPF",
+      "DevExpress",
+      "SQL Server",
+      "REST/SOAP"
+    ],
+    "projectIds": [
+      "erp-integration",
+      "mercadolibre-stock-sync",
+      "ip43-nba",
+      "image-handler"
+    ]
   },
   {
     "id": "data",
-    "label": { "es": "Data & Automatización", "en": "Data & Automation", "fr": "Data & Automatisation" },
-    "file": "/cv/Juan-Kniazev-CV-Data-Automation.pdf",
-    "prioritySkills": ["Python", "BigQuery", "SQL", "Data quality", "Automation", "Looker Studio"],
-    "projectIds": ["data-automation", "walletbot", "image-handler", "ip43-nba"]
+    "label": {
+      "es": "Data, automatizacion y BI",
+      "en": "Data, Automation and BI",
+      "fr": "Data, automatisation et BI"
+    },
+    "pitch": {
+      "es": "Automatizacion operativa, ETL, reporteria y BI para mejorar visibilidad, tiempos de respuesta y toma de decisiones.",
+      "en": "Operational automation, ETL, reporting and BI to improve visibility, turnaround times and decision-making.",
+      "fr": "Automatisation operationnelle, ETL, reporting et BI pour ameliorer la visibilite, les delais de traitement et la prise de decision."
+    },
+    "files": {
+      "es": "/cv/Juan-Kniazev-CV-Data-Automatizacion-ES.pdf",
+      "en": "/cv/Juan-Kniazev-CV-Data-Automation-EN.pdf",
+      "fr": "/cv/Juan-Kniazev-CV-Data-Automatisation-FR.pdf"
+    },
+    "prioritySkills": [
+      "Python",
+      "BigQuery",
+      "Looker Studio",
+      "ETL",
+      "Automation",
+      "Business KPIs"
+    ],
+    "projectIds": [
+      "pedidosya-automation",
+      "catalog-visibility",
+      "bi-module",
+      "mercadolibre-stock-sync"
+    ]
   }
 ]
